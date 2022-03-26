@@ -1,4 +1,5 @@
 # DEMO Station
+* root：https://minruxie.github.io/demo_station/
 
 ## 目錄
-* kana_toy
+* kana_toy：https://minruxie.github.io/demo_station/kana_toy
