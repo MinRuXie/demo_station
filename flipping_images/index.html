@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>翻翻牌對對碰遊戲</title>
+
+    <!-- google info -->
+    <meta name="description" content="遊戲規則：必須連續翻開兩張一樣的圖案，才能消除卡片。場上所有卡片都消失後即可獲勝。">
+    <meta name="author" content="Copyright&copy;Since 2019, JoyXie.">
+    
+    <!-- facebook og -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="翻翻牌對對碰遊戲"/>
+    <meta property="og:site_name" content="翻翻牌對對碰遊戲"/>
+    <meta property="og:description" content="遊戲規則：必須連續翻開兩張一樣的圖案，才能消除卡片。場上所有卡片都消失後即可獲勝。"/>
+    <meta property="og:url" content="https://minruxie.github.io/demo_station/flipping_images"/>
+    <meta property="og:image" content="https://minruxie.github.io/demo_station/flipping_images/dist/assets/img/og.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="315"/>
+
+    <!-- icon -->
+    <link rel="icon" href="dist/assets/img/icon.png" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- custom -->
+    <link href="dist/assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrap">
+        <section class="main-panel">
+            <div id="js-card-wrap" class="card-wrap game-column"></div>
+        </section>
+        <section class="control-panel">
+            <div class="time-wrap">
+                <span>經過時間</span>
+                <span id="js-timer" class="timer"></span>
+            </div>
+            <div class="history-wrap">
+                <ul id="js-history-list"></ul>
+            </div>
+
+            <!-- <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9FCCYhLi6sc?&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+
+            <div id="js-restart-btn" class="restart-btn btn">RESTART</div>
+        </section>
+    </div>
+    
+    <div id="js-loading" class='loading-warp modal-wrap'>Loading...</div>
+
+    <div id="js-ready" class='ready-warp modal-wrap'>
+        <!-- bg -->
+        <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
+
+        <div class="game-cover">
+            <picture>
+                <source srcset="dist/assets/webps/cover.webp" type="image/webp">
+                <img class="front" src="dist/assets/img/cover.jpg" alt="card">
+            </picture>
+            <picture>
+                <source srcset="dist/assets/webps/icon.webp" type="image/webp">
+                <img id="js-game-cover-back" class="back" src="dist/assets/img/icon.png" alt="card">
+            </picture>
+        </div>
+        
+        <div id="js-language-btn-wrap" class="language-btn-wrap">
+            <div class="language-btn active" data-tab="section-1">中</div>
+            <div class="language-btn" data-tab="section-2">EN</div>
+        </div>
+        <div id="js-game-rule-wrap" class="game-rule-wrap">
+            <div class="game-rule active" data-tab="section-1">
+                <h2>翻翻牌對對碰 注意事項</h2>
+                <ul>
+                    <li>3 列 8 欄 (24張) 12 種圖案的翻翻牌對對碰遊戲。</li>
+                    <li>遊戲規則：必須連續翻開兩張一樣的圖案，才能消除卡片。場上所有卡片都消失後即可獲勝。</li>
+                    <li>計時制：按下開始遊戲後即開始計時，花費秒數越少的話排名越高。</li>
+                    <li>重新開始：每次重新開始都會重新選出 12 種圖案並打亂排序。</li>
+                </ul>
+            </div>
+            <div class="game-rule" data-tab="section-2">
+                <h2>Game rules</h2>
+                <ul>
+                    <li>3 rows and 8 columns (24 cards) 12 patterns.</li>
+                    <li>The rules of the game: You must open two of the same patterns in a row to eliminate the cards. Win after all the cards on the field disappear.</li>
+                    <li>Timing system: The timing will start after you press the start button to start the game. The less seconds it takes, the higher the ranking.</li>
+                    <li>Restart: Each time you restart, 12 patterns will be re-selected and the order will be random.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="js-start-btn" class="start-btn btn">START</div>
+    </div>
+
+    <div class='warn_size modal-wrap'>
+        <p>視窗太小了！不給你看！</p>
+    </div>
+
+    <div id="js-reward-wrap" class="reward-wrap modal-wrap"></div>
+
+    <!-- audio -->
+    <audio id="js-bg-player" autoplay loop preload="auto">
+        <source src="dist/assets/audio/あなたの好きなところ_piano.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="js-correct-player" preload="auto">
+        <source src="dist/assets/audio/correct.wav" type="audio/wav">
+    </audio>
+
+    <audio id="js-incorrect-player" preload="auto">
+        <source src="dist/assets/audio/incorrect.wav" type="audio/wav">
+    </audio>
+
+    <audio id="js-flipping-player" preload="auto">
+        <source src="dist/assets/audio/flipping.wav" type="audio/wav">
+    </audio>
+
+    <audio id="js-start-player" preload="auto">
+        <source src="dist/assets/audio/start.ogg" type="audio/ogg">
+    </audio>
+
+
+    <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script type="module" src="dist/assets/js/main.js"></script>
+</body>
+</html>
