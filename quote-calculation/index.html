@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>勞務報酬計算機</title>
+    <link rel="icon" href="/dist/assets/images/calculator.svg" type="image/x-icon">
+	<link rel="stylesheet" href="/dist/assets/css/style.css" type="text/css" />
+</head>
+<body>
+
+    <main>
+        <h1>勞務報酬計算機</h1>
+        <section class="card_wrap">
+            <div id="app" class="card">
+                <h2>報價計算機</h2>
+                <div  class="grid-wrap">
+                    <div class="grid-item">報價（支領金額）</div>
+                    <div class="grid-item">{{getTaxIncludedQuotation}}</div>
+                    <div class="grid-item">
+                        <label for="health_insurance_fare">
+                            健保補充保費 2.11%<br>（報價>=20K）
+                        </label>
+                        <input type="checkbox" id="health_insurance_fare" name="insurance" v-model="health_toggle">
+                    </div>
+                    <div class="grid-item">{{getHealthInsurance}}</div>
+                    <div class="grid-item">
+                        <label for="income_tax_fare">
+                            代扣所得稅 10%<br>（報價>20K）
+                        </label>
+                        <input type="checkbox" id="income_tax_fare" name="income_tax" v-model="income_tax_toggle">
+                    </div>
+                    <div class="grid-item">{{getIncomeTax}}</div>
+                    <div class="grid-item">最終實領（支領淨額）</div>
+                    <div class="grid-item">
+                        <input type="number" min="0" placeholder="請輸入金額" v-model="final_actual_collar">
+                    </div>
+                </div>
+            </div>
+            <div id="app2" class="card">
+                <h2>最終實領計算機</h2>
+                <div class="grid-wrap">
+                    <div class="grid-item">報價（支領金額）</div>
+                    <div class="grid-item">
+                        <input type="number" min="0" placeholder="請輸入金額" v-model="quotation">
+                    </div>
+                    <div class="grid-item">
+                        <label for="health_insurance_fare-2">
+                            健保補充保費 2.11%<br>（報價>=20K）
+                        </label>
+                        <input type="checkbox" id="health_insurance_fare-2" name="insurance" v-model="health_toggle">
+                    </div>
+                    <div class="grid-item">{{getHealthInsurance}}</div>
+    
+                    <div class="grid-item">
+                        <label for="income_tax_fare-2">
+                            代扣所得稅 10%<br>（報價>20K）
+                        </label>
+                        <input type="checkbox" id="income_tax_fare-2" name="income_tax" v-model="income_tax_toggle">
+                    </div>
+                    <div class="grid-item">{{getIncomeTax}}</div>
+                    <div class="grid-item">最終實領（支領淨額）</div>
+                    <div class="grid-item">{{getFinalActualCollar}}</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Plugin -->
+    <script src="/dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="/dist/assets/js/plugins/vue.min.js"></script>
+
+    <!-- Custom -->
+    <script src="/dist/assets/js/bundle.js"></script>
+</body>
+</html>
