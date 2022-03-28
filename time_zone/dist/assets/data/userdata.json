@@ -1,0 +1,21 @@
+[
+    {
+        "name": "我們",
+        "timezone": "Asia/Taipei"
+    },{
+        "name": "PM",
+        "timezone": "Asia/Tokyo"
+    },{
+        "name": "米國電商",
+        "timezone": "America/Los_Angeles"
+    },{
+        "name": "珍珠",
+        "timezone": "America/New_York"
+    },{
+        "name": "廖廖",
+        "timezone": "Australia/Adelaide"
+    },{
+        "name": "妍寧",
+        "timezone": "Australia/Melbourne"
+    }
+]
