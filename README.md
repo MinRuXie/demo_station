@@ -11,4 +11,4 @@
 * 4x4產生器：https://minruxie.github.io/demo_station/grider
 * 吉他簡譜轉TAB譜：https://minruxie.github.io/demo_station/GuitarTABTool
 * 吉他TAB譜轉簡譜_V1：
-* 吉他TAB譜轉簡譜_V2：
+* 吉他TAB譜轉簡譜_V2：https://minruxie.github.io/demo_station/GuitarNotationTool_2
