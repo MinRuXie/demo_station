@@ -1,0 +1,1 @@
+const content='<div v-html="post"></div>',Content={template:content,data:()=>({post:""}),created(){this.fetchData()},methods:{fetchData(){fetch("src/assets/data/contents/whee.html").then((t=>t.text())).then((t=>this.post=t))}}};export default Content;
