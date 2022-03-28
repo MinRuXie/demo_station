@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 快快做</title>
+
+    <!-- google info -->
+    <meta name="description" content="4x4 快快做">
+    <meta name="author" content="Copyright&copy;Since 2021, JoyXie.">
+    
+    <!-- facebook og -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="4x4 快快做"/>
+    <meta property="og:site_name" content="4x4 快快做"/>
+    <meta property="og:description" content="4x4 快快做"/>
+    <meta property="og:url" content="https://minruxie.github.io/demo_station/grider"/>
+
+    <!-- icon -->
+    <link rel="icon" href="dist/assets/images/grid.svg" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+</head>
+<body>
+    <main id="app">
+        <section class="work-wrap">
+            <div id="capture" class="capture-wrap">
+                <div id="js-year-wrap" class="year-wrap">{{ year_text }}</div>
+                <div id="js-grid-wrap" class="grid-wrap"></div>
+            </div> 
+        </section>
+
+        <section class="toolbox-wrap">
+            <h3>年份樣式</h3>
+
+            <div class="form-group">
+                <label for="js-year-show">顯示文字
+                    <input type="checkbox" id="js-year-show" name="year-show" 
+                        v-model:checked="year_display" 
+                        v-on:change="changeYearDisplay">
+                </label>
+                <input id="js-year-text" name="year-text" type="text" 
+                    v-model="year_text" 
+                    v-on:change="changeYearText"
+                    v-on:keyup="changeYearText">
+            </div>
+    
+            <div class="form-group">
+                <label for="js-year-color">顏色</label>
+                <input id="js-year-color" name="year-color" type="color" 
+                    v-model="year_color" 
+                    v-on:change="changeYearColor"
+                    v-on:keyup="changeYearColor">
+            </div>
+
+            <div class="form-group">
+                <label for="year-font-size">字體大小</label>
+                <input name="year-font-size" min="12" max="100" type="number" 
+                    v-model="year_font_size" 
+                    v-on:change="changeYearSize"
+                    v-on:keyup="changeYearSize">px
+            </div>
+
+            <div class="form-group">
+                <label for="js-year-font-weight">字重</label>
+                <select name="year-font-weight" id="js-year-font-weight" v-model="year_font_weight" v-on:change="changeYearWeight">
+                    <option value="normal">normal</option>
+                    <option value="bold">bold</option>
+                    <option value="bolder">bolder</option>
+                    <option value="lighter">lighter</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                    <option value="700">700</option>
+                    <option value="800">800</option>
+                    <option value="900">900</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="js-year-font-family-link">Google 字型 link</label>
+                <textarea id="js-year-font-family-link" name="year-font-family-link" cols="40" rows="3" 
+                    v-model="year_font_family_link" 
+                    @keydown.enter.exact.prevent 
+                    @keyup.enter.exact="changeFontLink"
+                    v-on:keyup="changeFontLink"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="js-year-font-family-name">Google 字型 CSS 名稱</label>
+                <input id="js-year-font-family-name" name="year-font-family-name" type="text" 
+                    v-model="year_font_family_name" 
+                    v-on:change="changeYearFont"
+                    v-on:keyup="changeYearFont">
+            </div>
+
+            <h4>輸出</h4>
+            <button id="js-takeshot-btn" v-on:click="getScreenshot">產生圖檔</button>
+        </section>
+    </main>
+
+    <section class="output-wrap">
+        <div id="js-colsed-btn" class="colsed-btn">X</div>
+        <div id="output"></div>
+    </section>
+
+    <!-- plugins -->
+    <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="dist/assets/js/plugins/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+    <!-- custom -->
+    <script src="dist/assets/js/bundle.js"></script>
+</body>
+</html>

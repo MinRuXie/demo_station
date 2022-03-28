@@ -8,7 +8,7 @@
 * 翻翻牌對對碰遊戲：https://minruxie.github.io/demo_station/flipping_images
 * 手機漫畫閱讀器：https://minruxie.github.io/demo_station/comicReader
 * 時區對照表：https://minruxie.github.io/demo_station/time_zone
-* 4x4產生器：
+* 4x4產生器：https://minruxie.github.io/demo_station/grider
 * 吉他簡譜轉TAB譜：https://minruxie.github.io/demo_station/GuitarTABTool
 * 吉他TAB譜轉簡譜_V1：
 * 吉他TAB譜轉簡譜_V2：
