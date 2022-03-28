@@ -1,0 +1,490 @@
+[
+    {
+        "category": "front-end-making",
+        "title_en": "Front-end Making",
+        "title_ch": "前端製作",
+        "des": "",
+        "works": [
+            {
+                "name": "surpriselab",
+                "title": "驚喜製造 SURPRISE LAB",
+                "title_en": "Surprise Lab",
+                "description": "官方網站（多頁式）",
+                "year": "2022",
+                "image": "dist/assets/images/work/coming-soon.jpg",
+                "webp": "dist/assets/images/webps/coming-soon.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Owl Carousel 2"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 全站共用樣式 & 元件",
+                    "- Navigation、Footer", 
+                    "- 頁面切版：PROJECT、作品內頁、PRIVACY"
+                ]
+            },{
+                "name": "andmakers-retailer",
+                "title": "AndMakers Retailer",
+                "title_en": "AndMakers Retailer",
+                "description": "Landing Page",
+                "year": "2021",
+                "image": "dist/assets/images/work/andmakers_retailer/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/andmakers_retailer/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Vue.js"],
+                "link": "https://retailers.andmakers.co/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版",
+                    "- 串接 JSON 資料"
+                ]
+            },{
+                "name": "telephonebooth",
+                "title": "微醺大飯店：1980s",
+                "title_en": "Telephone Booth",
+                "description": "活動網頁（一頁式切換畫面）",
+                "year": "2021",
+                "image": "dist/assets/images/work/telephonebooth/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/telephonebooth/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版",
+                    "- 欄位驗證（序號 & 密碼）",
+                    "- 音檔控制（播放、暫停、下載、移除）"
+                ]
+            },{
+                "name": "auto-group-commerce",
+                "title": "Auto Group Commerce",
+                "title_en": "Auto Group Commerce",
+                "description": "Landing Page",
+                "year": "2021",
+                "image": "dist/assets/images/work/auto_group_commerce/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/auto_group_commerce/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "http://www.autogroupcommerce.com/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            },{
+                "name": "andmakers-india-vendor",
+                "title": "AndMakers India Vendor",
+                "title_en": "AndMakers India Vendor",
+                "description": "Landing Page",
+                "year": "2021",
+                "image": "dist/assets/images/work/andmaker_india_vendor/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/andmaker_india_vendor/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "http://brands.in.andmakers.co/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            },{
+                "name": "andmakers-vendor",
+                "title": "AndMakers Vendor",
+                "title_en": "AndMakers Vendor",
+                "description": "Landing Page",
+                "year": "2020",
+                "image": "dist/assets/images/work/andmaker_vendor/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/andmaker_vendor/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "https://brands.andmakers.co/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            },{
+                "name": "andmakers-webinar",
+                "title": "AndMakers Webinar",
+                "title_en": "AndMakers Webinar",
+                "description": "Landing Page",
+                "year": "2020",
+                "image": "dist/assets/images/work/andmaker_webinar/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/andmaker_webinar/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            },{
+                "name": "whee",
+                "title": "WHEE! 下來玩",
+                "title_en": "WHEE! WHEE! WHEE!",
+                "description": "官網 & 訂位頁面（多頁式）",
+                "year": "2020",
+                "image": "dist/assets/images/work/whee/opengraph.png",
+                "webp": "dist/assets/images/webps/whee/opengraph.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "http://whee.com.tw/",
+                "github": "",
+                "info_contents": [
+                    "- 全站共用樣式、Navigation、Footer", 
+                    "- 版型開發（A-1、A-2、C-3）",
+                    "- 部分頁面切版"
+                ]
+            },{
+                "name": "andmakers-ebook",
+                "title": "AndMakers eBook",
+                "title_en": "AndMakers eBook",
+                "description": "Landing Page",
+                "year": "2020",
+                "image": "dist/assets/images/work/andmker_ebook/cover.jpg",
+                "webp": "dist/assets/images/webps/andmker_ebook/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "https://start-ecommerce.andmakers.co/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            },{
+                "name": "cenports-ad",
+                "title": "Cenports Ad Page",
+                "title_en": "Cenports Ad",
+                "description": "Landing Page",
+                "year": "2020",
+                "image": "dist/assets/images/work/cenports_ad/thumbnail.png",
+                "webp": "dist/assets/images/webps/cenports_ad/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "https://fulfillment.cenports.com/",
+                "github": "",
+                "info_contents": [
+                    "- 前端切版"
+                ]
+            }
+        ]
+    },{
+        "category": "front-end-cms-style",
+        "title_en": "Content Management System",
+        "title_ch": "內容管理系統",
+        "des": "",
+        "works": [
+            {
+                "name": "trouble-care-v2",
+                "title": "Trouble Care 妳的煩惱顧問",
+                "title_en": "Trouble Care",
+                "description": "前端製作（Version 2）",
+                "year": "2020-2022",
+                "image": "dist/assets/images/work/trouble_care_v2/trouble-care_logo.png",
+                "webp": "dist/assets/images/webps/trouble_care_v2/trouble-care_logo.webp",
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+                "link": "https://trouble-care.com/",
+                "github": "",
+                "info_contents": [
+                    "- 全站樣式製作",
+                    "- 部分前端效果與功能",
+                    "- 維護 & 持續調整版面"
+                ]
+            },{
+                "name": "purestyle-note-v1",
+                "title": "PureStyle Note",
+                "title_en": "PureStyle Note",
+                "description": "版面設計 & 前端製作（Version 1）",
+                "year": "2020-2022",
+                "image": "dist/assets/images/work/pure_style_v1/logo.png",
+                "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
+                "tags": ["WordPress", "Adobe XD", "HTML", "CSS", "JavaScript", "jQuery"],
+                "link": "https://purestyle-note.com/",
+                "github": "",
+                "info_contents": [
+                    "- 全站樣式設計 & 製作",
+                    "- 部分前端效果與功能",
+                    "- 維護 & 持續調整版面"
+                ]
+            },{
+                "name": "xingfutang-newyork",
+                "title": "XingFuTang - NewYork",
+                "title_en": "XingFuTangNewYork",
+                "description": "前端製作 - 連結死亡中",
+                "year": "2020",
+                "image": "dist/assets/images/work/xingfutang/xingfutang_logo.png",
+                "webp": "dist/assets/images/webps/xingfutang/xingfutang_logo.webp",
+                "tags": ["Squarespace", "CSS", "JavaScript", "jQuery"],
+                "link": "https://www.usaxingfutang.com/",
+                "github": "",
+                "info_contents": [
+                    "- 前端樣式調整"
+                ]
+            },{
+                "name": "college-muscle-girl",
+                "title": "健美女大生",
+                "title_en": "COLLEGE MUSCLE GIRL",
+                "description": "前端製作",
+                "year": "2019",
+                "image": "dist/assets/images/work/college_muscle_girl/opengraph.png",
+                "webp": "dist/assets/images/webps/college_muscle_girl/opengraph.webp",
+                "tags": ["Squarespace", "CSS"],
+                "link": "https://www.kellyyuan.com/",
+                "github": "",
+                "info_contents": [
+                    "- 前端樣式調整"
+                ]
+            },{
+                "name": "all-in-v3",
+                "title": "All-in 專業推薦",
+                "title_en": "All-in",
+                "description": "版面設計（Version 3）- 未採用",
+                "year": "2019",
+                "image": "dist/assets/images/work/all_in_v3/all_in_title.png",
+                "webp": "dist/assets/images/webps/all_in_v3/all_in_title.webp",
+                "tags": ["WordPress", "Adobe XD"],
+                "link": "https://all-in.tw/",
+                "github": "",
+                "info_contents": [
+                    "- 全站樣式設計"
+                ]
+            },{
+                "name": "all-in-v1",
+                "title": "All-in 專業推薦",
+                "title_en": "All-in",
+                "description": "前端製作（Version 1）- 已撤換",
+                "year": "2019",
+                "image": "dist/assets/images/work/all_in_v1/all_in_banner.jpg",
+                "webp": "dist/assets/images/webps/all_in_v1/all_in_banner.webp",
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+                "link": "https://all-in.tw/",
+                "github": "",
+                "info_contents": [
+                    "- 全站樣式製作",
+                    "- 維護"
+                ]
+            },{
+                "name": "trouble-care-v1",
+                "title": "Trouble Care 妳的煩惱顧問",
+                "title_en": "Trouble Care",
+                "description": "前端製作（Version 1）- 已撤換",
+                "year": "2019",
+                "image": "dist/assets/images/work/trouble_care_v1/trouble_care.png",
+                "webp": "dist/assets/images/webps/trouble_care_v1/trouble_care.webp",
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+                "link": "https://trouble-care.com/",
+                "github": "",
+                "info_contents": [
+                    "- 全站樣式製作",
+                    "- 維護"
+                ]
+            }
+        ]
+    },{
+        "id": 2,
+        "category": "side-projects",
+        "title_en": "Side-Projects",
+        "title_ch": "個人作品",
+        "des": "",
+        "works": [
+            {
+                "name": "four-by-four",
+                "title": "4x4 圖片產生器",
+                "title_en": "FourByFour",
+                "description": "快速合併16張作品圖",
+                "year": "2021",
+                "image": "dist/assets/images/work/four_by_four/cover.png",
+                "webp": "dist/assets/images/webps/four_by_four/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Vue.js"],
+                "link": "https://minruxie.github.io/demo_station/grider",
+                "github": "",
+                "info_contents": [
+                    "- 需求訪談",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "comic-reader",
+                "title": "手機漫畫閱讀器",
+                "title_en": "ComicReader",
+                "description": "專門瀏覽手機漫畫（連續直向圖）",
+                "year": "2020-2021",
+                "image": "dist/assets/images/work/comic_reader/cover.png",
+                "webp": "dist/assets/images/webps/comic_reader/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
+                "link": "https://minruxie.github.io/demo_station/comicReader",
+                "github": "",
+                "info_contents": [
+                    "- 功能發想",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "flipping-cards-game",
+                "title": "翻翻牌對對碰遊戲",
+                "title_en": "FlippingCardsGame",
+                "description": "滑鼠操作之網頁遊戲",
+                "year": "2019-2021",
+                "image": "dist/assets/images/work/flipping_cards_game/cover.png",
+                "webp": "dist/assets/images/webps/flipping_cards_game/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Gulp"],
+                "link": "https://minruxie.github.io/demo_station/flipping_images",
+                "github": "",
+                "info_contents": [
+                    "- 部分素材製作",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "piano-notation-conversion-tool",
+                "title": "鋼琴簡譜產生工具",
+                "title_en": "PianoNotationConversionTool",
+                "description": "鋼琴介面的簡譜/五線譜產生工具",
+                "year": "2019-2021",
+                "image": "dist/assets/images/work/piano/piano_notation_conversion_tool_1.png",
+                "webp": "dist/assets/images/webps/piano/piano_notation_conversion_tool_1.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "vue-i18n", "Gulp"],
+                "link": "https://minruxie.github.io/demo_station/PianoNotationConversionTool",
+                "github": "",
+                "info_contents": [
+                    "- 功能發想",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "guitar-tab-translator-v2",
+                "title": "吉他 TAB 譜翻譯機 V2",
+                "title_en": "GuitarTABTranslator V2",
+                "description": "吉他 TAB 譜 → 數字簡譜",
+                "year": "2020",
+                "image": "dist/assets/images/work/guitar_tab_translator_v2/cover.png",
+                "webp": "dist/assets/images/webps/guitar_tab_translator_v2/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
+                "link": "https://minruxie.github.io/demo_station/GuitarNotationTool_2",
+                "github": "",
+                "info_contents": [
+                    "- 功能發想",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "guitar-tab-translator-v1",
+                "title": "吉他 TAB 譜翻譯機 V1",
+                "title_en": "GuitarTABTranslator V1",
+                "description": "吉他 TAB 譜 → 數字簡譜",
+                "year": "2020-2021",
+                "image": "dist/assets/images/work/guitar_tab_translator_v1/cover.png",
+                "webp": "dist/assets/images/webps/guitar_tab_translator_v1/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
+                "link": "https://minruxie.github.io/demo_station/GuitarNotationTool",
+                "github": "",
+                "info_contents": [
+                    "- 功能發想",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "guitar-tab-generator",
+                "title": "吉他 TAB 譜產生器",
+                "title_en": "GuitarTABGenerator",
+                "description": "數字簡譜 → 吉他 TAB 譜",
+                "year": "2020-2021",
+                "image": "dist/assets/images/work/guitar_tab_generator/cover.png",
+                "webp": "dist/assets/images/webps/guitar_tab_generator/cover.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
+                "link": "https://minruxie.github.io/demo_station/GuitarTABTool",
+                "github": "",
+                "info_contents": [
+                    "- 功能發想",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "quote-calculation",
+                "title": "勞務報酬計算機",
+                "title_en": "QuoteCalculation",
+                "description": "報價金額 ←→ 實領金額",
+                "year": "2019-2021",
+                "image": "dist/assets/images/work/quote_calculation/thumbnail.png",
+                "webp": "dist/assets/images/webps/quote_calculation/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "Vue.js"],
+                "link": "https://minruxie.github.io/demo_station/quote-calculation",
+                "github": "",
+                "info_contents": [
+                    "- 需求訪談",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "time-zone",
+                "title": "時區對照表",
+                "title_en": "TimeZone",
+                "description": "列出不同時區的目前時間",
+                "year": "2019-2021",
+                "image": "dist/assets/images/work/coming-soon.png",
+                "webp": "dist/assets/images/webps/coming-soon.webp",
+                "tags": ["HTML", "SCSS", "Bootstrap", "JavaScript", "jQuery"],
+                "link": "https://minruxie.github.io/demo_station/time_zone",
+                "github": "",
+                "info_contents": [
+                    "- 需求訪談",
+                    "- 介面設計",
+                    "- 前端製作"
+                ]
+            },{
+                "name": "escape-room-game",
+                "title": "逃離房間遊戲",
+                "title_en": "EscapeRoomGame",
+                "description": "滑鼠操作之網頁遊戲",
+                "year": "2017",
+                "image": "dist/assets/images/work/escape/escape_room_game_1.png",
+                "webp": "dist/assets/images/webps/escape/escape_room_game_1.webp",
+                "tags": ["layoutIt-tab", "HTML", "CSS", "JavaScript"],
+                "link": "https://minruxie.github.io/NO.6_EscapeRoomGame/",
+                "github": "https://github.com/MinRuXie/NO.6_EscapeRoomGame",
+                "info_contents": [
+                    "- 關卡設計",
+                    "- 圖片繪製",
+                    "- 前端製作"
+                ]
+            }
+        ]
+    },{
+        "category": "graphic-design",
+        "title_en": "Graphic design",
+        "title_ch": "平面設計作品",
+        "des": "",
+        "works": [
+            {
+                "name": "fordel-rakuten-edm",
+                "title": "商品 EDM 圖（五項）",
+                "title_en": "Fordel X Rakuten",
+                "description": "美的研究所x樂天 活動",
+                "year": "2020",
+                "image": "dist/assets/images/work/fordel_rakuten/logo.png",
+                "webp": "dist/assets/images/webps/fordel_rakuten/logo.webp",
+                "tags": ["Adobe Photoshop"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 素材提供 / 美的研究所",
+                    "- 製作 / Joy Xie"
+                ]
+            },{
+                "name": "meet-hipster-app-google-play",
+                "title": "遇見。文青 APP",
+                "title_en": "MeetHipster",
+                "description": "畢業專題 Google Play 上架圖",
+                "year": "2015-2016",
+                "image": "dist/assets/images/work/meethipster/meethipster_1.png",
+                "webp": "dist/assets/images/webps/meethipster/meethipster_1.webp",
+                "tags": ["Adobe Illustrator"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 設計製作"
+                ]
+            },{
+                "name": "ntub-design",
+                "title": "NTUB 教務處學術服務組",
+                "title_en": "NTUB",
+                "description": "校刊連結 EDM 及海報",
+                "year": "2015-2016",
+                "image": "dist/assets/images/work/ntub/logo.png",
+                "webp": "dist/assets/images/webps/ntub/logo.webp",
+                "tags": ["Adobe Illustrator"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "- 設計製作"
+                ]
+            }
+        ]
+    }
+]
