@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicReader</title>
+    <meta property="og:title" content="ComicReader" /> 
+    <meta property="og:url" content="https://minruxie.github.io/demo_station/comicReader" />
+    <meta property="og:description" content="手機漫畫閱讀器" />
+
+    <link rel="icon" href="images/icon.svg" type="image/x-icon">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Plugins -->
+    <link href="dist/assets/css/plugins/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom -->
+    <link href="dist/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="main" data-theme="default">
+        <div class="menu">
+            <span id="js-title" class="title">看漫畫哦</span>
+            <input type="file" onchange="selectFolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple>
+            <button type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="far fa-question-circle"></i>
+            </button>
+            <button id="js-dark-mode-btn" class="dark-mode-btn">
+                <i class="fas fa-adjust"></i>
+            </button>
+        </div>
+        <div id="js-panel" class="panel"></div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">使用說明</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>漫畫圖檔名稱須為整齊含固定長度編號的名稱，例如：</p>
+                    <ul>
+                        <li>image_001.jpg</li>
+                        <li>image_002.jpg</li>
+                        <li>...</li>
+                        <li>image_010.jpg</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Step.1 點擊「選擇檔案」按鈕<br>
+                        Step.2 選擇「漫畫單話」資料夾，例如：第一話<br>
+                        Step.3 開啃
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Plugins -->
+    <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="dist/assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Custom -->
+    <script src="dist/assets/js/bundle.js"></script>
+</body>
+</html>
