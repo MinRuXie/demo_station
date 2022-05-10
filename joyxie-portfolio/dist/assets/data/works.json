@@ -6,20 +6,37 @@
         "des": "",
         "works": [
             {
+                "name": "andmakers",
+                "title": "AndMakers",
+                "title_en": "AndMakers",
+                "description": "官方網站（多頁式）",
+                "year": "2022",
+                "image": "dist/assets/images/work/andmakers/thumbnail.jpeg",
+                "webp": "dist/assets/images/webps/andmakers/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Vue.js", "Owl Carousel 2"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "全站共用樣式 & 元件",
+                    "Navigation、Footer", 
+                    "前端切版：Home、Services、Catalog、Contact Us、FAQs、TOS & Policies、Terms of Service、Privacy Policies、Not Found",
+                    "串接 JSON 資料：HOME Retailers、HOME FAQs、Catalog Category、Catalog Review、FAQs"
+                ]
+            },{
                 "name": "surpriselab",
                 "title": "驚喜製造 SURPRISE LAB",
                 "title_en": "Surprise Lab",
                 "description": "官方網站（多頁式）",
                 "year": "2022",
-                "image": "dist/assets/images/work/coming-soon.jpg",
-                "webp": "dist/assets/images/webps/coming-soon.webp",
+                "image": "dist/assets/images/work/surpriselab/thumbnail.jpeg",
+                "webp": "dist/assets/images/webps/surpriselab/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Owl Carousel 2"],
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 全站共用樣式 & 元件",
-                    "- Navigation、Footer", 
-                    "- 頁面切版：PROJECT、作品內頁、PRIVACY"
+                    "全站共用樣式 & 元件",
+                    "Navigation、Footer", 
+                    "前端切版：PROJECT、作品內頁、PRIVACY"
                 ]
             },{
                 "name": "andmakers-retailer",
@@ -33,8 +50,8 @@
                 "link": "https://retailers.andmakers.co/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版",
-                    "- 串接 JSON 資料"
+                    "前端切版",
+                    "串接 JSON 資料：Hero、Product、Review"
                 ]
             },{
                 "name": "telephonebooth",
@@ -48,9 +65,9 @@
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版",
-                    "- 欄位驗證（序號 & 密碼）",
-                    "- 音檔控制（播放、暫停、下載、移除）"
+                    "前端切版",
+                    "欄位驗證：序號 & 密碼",
+                    "音檔控制：播放、暫停、下載、移除"
                 ]
             },{
                 "name": "auto-group-commerce",
@@ -64,7 +81,7 @@
                 "link": "http://www.autogroupcommerce.com/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             },{
                 "name": "andmakers-india-vendor",
@@ -78,7 +95,7 @@
                 "link": "http://brands.in.andmakers.co/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             },{
                 "name": "andmakers-vendor",
@@ -92,7 +109,7 @@
                 "link": "https://brands.andmakers.co/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             },{
                 "name": "andmakers-webinar",
@@ -106,7 +123,7 @@
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             },{
                 "name": "whee",
@@ -120,9 +137,10 @@
                 "link": "http://whee.com.tw/",
                 "github": "",
                 "info_contents": [
-                    "- 全站共用樣式、Navigation、Footer", 
-                    "- 版型開發（A-1、A-2、C-3）",
-                    "- 部分頁面切版"
+                    "全站共用樣式",
+                    "Navigation、Footer", 
+                    "版型開發：A-1、A-2、C-3",
+                    "前端切版：Home、Mini Golf、Booth、Food & Drink、Book Now(Mini Golf)、Booking"
                 ]
             },{
                 "name": "andmakers-ebook",
@@ -136,7 +154,7 @@
                 "link": "https://start-ecommerce.andmakers.co/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             },{
                 "name": "cenports-ad",
@@ -150,7 +168,7 @@
                 "link": "https://fulfillment.cenports.com/",
                 "github": "",
                 "info_contents": [
-                    "- 前端切版"
+                    "前端切版"
                 ]
             }
         ]
@@ -172,9 +190,9 @@
                 "link": "https://trouble-care.com/",
                 "github": "",
                 "info_contents": [
-                    "- 全站樣式製作",
-                    "- 部分前端效果與功能",
-                    "- 維護 & 持續調整版面"
+                    "全站樣式製作",
+                    "部分前端效果與功能",
+                    "維護 & 持續調整版面"
                 ]
             },{
                 "name": "purestyle-note-v1",
@@ -188,9 +206,9 @@
                 "link": "https://purestyle-note.com/",
                 "github": "",
                 "info_contents": [
-                    "- 全站樣式設計 & 製作",
-                    "- 部分前端效果與功能",
-                    "- 維護 & 持續調整版面"
+                    "全站樣式設計 & 製作",
+                    "部分前端效果與功能",
+                    "維護 & 持續調整版面"
                 ]
             },{
                 "name": "xingfutang-newyork",
@@ -204,7 +222,7 @@
                 "link": "https://www.usaxingfutang.com/",
                 "github": "",
                 "info_contents": [
-                    "- 前端樣式調整"
+                    "前端樣式調整"
                 ]
             },{
                 "name": "college-muscle-girl",
@@ -218,7 +236,7 @@
                 "link": "https://www.kellyyuan.com/",
                 "github": "",
                 "info_contents": [
-                    "- 前端樣式調整"
+                    "前端樣式調整"
                 ]
             },{
                 "name": "all-in-v3",
@@ -232,7 +250,7 @@
                 "link": "https://all-in.tw/",
                 "github": "",
                 "info_contents": [
-                    "- 全站樣式設計"
+                    "全站樣式設計"
                 ]
             },{
                 "name": "all-in-v1",
@@ -246,8 +264,8 @@
                 "link": "https://all-in.tw/",
                 "github": "",
                 "info_contents": [
-                    "- 全站樣式製作",
-                    "- 維護"
+                    "全站樣式製作",
+                    "維護"
                 ]
             },{
                 "name": "trouble-care-v1",
@@ -261,8 +279,8 @@
                 "link": "https://trouble-care.com/",
                 "github": "",
                 "info_contents": [
-                    "- 全站樣式製作",
-                    "- 維護"
+                    "全站樣式製作",
+                    "維護"
                 ]
             }
         ]
@@ -285,15 +303,15 @@
                 "link": "https://minruxie.github.io/demo_station/grider",
                 "github": "",
                 "info_contents": [
-                    "- 需求訪談",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "需求訪談",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "comic-reader",
-                "title": "手機漫畫閱讀器",
+                "title": "手機漫畫-電腦閱讀器",
                 "title_en": "ComicReader",
-                "description": "專門瀏覽手機漫畫（連續直向圖）",
+                "description": "瀏覽連續直向圖",
                 "year": "2020-2021",
                 "image": "dist/assets/images/work/comic_reader/cover.png",
                 "webp": "dist/assets/images/webps/comic_reader/cover.webp",
@@ -301,9 +319,9 @@
                 "link": "https://minruxie.github.io/demo_station/comicReader",
                 "github": "",
                 "info_contents": [
-                    "- 功能發想",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "flipping-cards-game",
@@ -311,15 +329,15 @@
                 "title_en": "FlippingCardsGame",
                 "description": "滑鼠操作之網頁遊戲",
                 "year": "2019-2021",
-                "image": "dist/assets/images/work/flipping_cards_game/cover.png",
-                "webp": "dist/assets/images/webps/flipping_cards_game/cover.webp",
+                "image": "dist/assets/images/work/flipping_cards_game/thumbnail.png",
+                "webp": "dist/assets/images/webps/flipping_cards_game/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Gulp"],
                 "link": "https://minruxie.github.io/demo_station/flipping_images",
                 "github": "",
                 "info_contents": [
-                    "- 部分素材製作",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "部分素材製作",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "piano-notation-conversion-tool",
@@ -333,9 +351,9 @@
                 "link": "https://minruxie.github.io/demo_station/PianoNotationConversionTool",
                 "github": "",
                 "info_contents": [
-                    "- 功能發想",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "guitar-tab-translator-v2",
@@ -349,9 +367,9 @@
                 "link": "https://minruxie.github.io/demo_station/GuitarNotationTool_2",
                 "github": "",
                 "info_contents": [
-                    "- 功能發想",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "guitar-tab-translator-v1",
@@ -365,9 +383,9 @@
                 "link": "https://minruxie.github.io/demo_station/GuitarNotationTool",
                 "github": "",
                 "info_contents": [
-                    "- 功能發想",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "guitar-tab-generator",
@@ -381,9 +399,9 @@
                 "link": "https://minruxie.github.io/demo_station/GuitarTABTool",
                 "github": "",
                 "info_contents": [
-                    "- 功能發想",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "quote-calculation",
@@ -397,9 +415,9 @@
                 "link": "https://minruxie.github.io/demo_station/quote-calculation",
                 "github": "",
                 "info_contents": [
-                    "- 需求訪談",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "需求訪談",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "time-zone",
@@ -407,15 +425,15 @@
                 "title_en": "TimeZone",
                 "description": "列出不同時區的目前時間",
                 "year": "2019-2021",
-                "image": "dist/assets/images/work/coming-soon.png",
-                "webp": "dist/assets/images/webps/coming-soon.webp",
+                "image": "dist/assets/images/work/time_zone/thumbnail.png",
+                "webp": "dist/assets/images/webps/time_zone/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "Bootstrap", "JavaScript", "jQuery"],
                 "link": "https://minruxie.github.io/demo_station/time_zone",
                 "github": "",
                 "info_contents": [
-                    "- 需求訪談",
-                    "- 介面設計",
-                    "- 前端製作"
+                    "需求訪談",
+                    "介面設計",
+                    "前端製作"
                 ]
             },{
                 "name": "escape-room-game",
@@ -429,9 +447,9 @@
                 "link": "https://minruxie.github.io/NO.6_EscapeRoomGame/",
                 "github": "https://github.com/MinRuXie/NO.6_EscapeRoomGame",
                 "info_contents": [
-                    "- 關卡設計",
-                    "- 圖片繪製",
-                    "- 前端製作"
+                    "關卡設計",
+                    "圖片繪製",
+                    "前端製作"
                 ]
             }
         ]
@@ -453,8 +471,8 @@
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 素材提供 / 美的研究所",
-                    "- 製作 / Joy Xie"
+                    "素材提供 / 美的研究所",
+                    "製作 / Joy Xie"
                 ]
             },{
                 "name": "meet-hipster-app-google-play",
@@ -468,7 +486,7 @@
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 設計製作"
+                    "設計製作"
                 ]
             },{
                 "name": "ntub-design",
@@ -482,7 +500,7 @@
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "- 設計製作"
+                    "設計製作"
                 ]
             }
         ]
