@@ -32,33 +32,50 @@
     <link href="dist/assets/css/main.css" rel="stylesheet">
 </head>
 <body>
+    
+    <!-- game -->
     <div class="game-wrap">
+        <!-- main -->
         <section class="main-panel">
             <div id="js-card-wrap" class="card-wrap game-column"></div>
         </section>
+
+        <!-- control -->
         <section class="control-panel">
+            <!-- time -->
             <div class="time-wrap">
-                <span>經過時間</span>
+                <span>Spend Time</span>
                 <span id="js-timer" class="timer"></span>
             </div>
+            
+            <!-- history -->
             <div class="history-wrap">
                 <ul id="js-history-list"></ul>
             </div>
 
-            <!-- <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9FCCYhLi6sc?&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
-
+            <!-- restart -->
             <div id="js-restart-btn" class="restart-btn btn">RESTART</div>
         </section>
     </div>
     
+    <!-- Loading modal -->
     <div id="js-loading" class='loading-warp modal-wrap'>Loading...</div>
 
+    <!-- Bg Music modal -->
+    <div id="js-bg-music" class='bg-music-warp modal-wrap'>
+        Background Music
+        <div class="bg-music-btn-wrap">
+            <div id="js-bg-music-on-btn" class="btn">ON</div>
+            <div id="js-bg-music-off-btn" class="btn">OFF</div>
+        </div>
+    </div>
+
+    <!-- Ready modal -->
     <div id="js-ready" class='ready-warp modal-wrap'>
         <!-- bg -->
         <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
 
+        <!-- card -->
         <div class="game-cover">
             <picture>
                 <source srcset="dist/assets/webps/cover.webp" type="image/webp">
@@ -70,10 +87,13 @@
             </picture>
         </div>
         
+        <!-- language -->
         <div id="js-language-btn-wrap" class="language-btn-wrap">
             <div class="language-btn active" data-tab="section-1">中</div>
             <div class="language-btn" data-tab="section-2">EN</div>
         </div>
+
+        <!-- rules -->
         <div id="js-game-rule-wrap" class="game-rule-wrap">
             <div class="game-rule active" data-tab="section-1">
                 <h2>翻翻牌對對碰 注意事項</h2>
@@ -94,38 +114,50 @@
                 </ul>
             </div>
         </div>
+
+        <!-- start btn -->
         <div id="js-start-btn" class="start-btn btn">START</div>
     </div>
 
+    <!-- warn modal -->
     <div class='warn_size modal-wrap'>
         <p>視窗太小了！不給你看！</p>
     </div>
 
+    <!-- reward modal -->
     <div id="js-reward-wrap" class="reward-wrap modal-wrap"></div>
 
+    
     <!-- audio -->
-    <audio id="js-bg-player" autoplay loop preload="auto">
+    <audio id="js-bg-player" loop preload="auto">
         <source src="dist/assets/audio/あなたの好きなところ_piano.mp3" type="audio/mpeg">
     </audio>
-
+    
+    <!-- audio -->
     <audio id="js-correct-player" preload="auto">
         <source src="dist/assets/audio/correct.wav" type="audio/wav">
     </audio>
-
+    
+    <!-- audio -->
     <audio id="js-incorrect-player" preload="auto">
         <source src="dist/assets/audio/incorrect.wav" type="audio/wav">
     </audio>
-
+    
+    <!-- audio -->
     <audio id="js-flipping-player" preload="auto">
         <source src="dist/assets/audio/flipping.wav" type="audio/wav">
     </audio>
-
+    
+    <!-- audio -->
     <audio id="js-start-player" preload="auto">
         <source src="dist/assets/audio/start.ogg" type="audio/ogg">
     </audio>
 
 
+    <!-- plugins -->
     <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+
+    <!-- custom -->
     <script type="module" src="dist/assets/js/main.js"></script>
 </body>
 </html>
