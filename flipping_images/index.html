@@ -54,78 +54,118 @@
             </div>
 
             <!-- restart -->
-            <div id="js-restart-btn" class="restart-btn btn">RESTART</div>
+            <div id="js-restart-btn" class="restart-btn btn style-black style-round size-large">RESTART</div>
         </section>
     </div>
     
-    <!-- Loading modal -->
-    <div id="js-loading" class='loading-warp modal-wrap'>Loading...</div>
-
-    <!-- Bg Music modal -->
-    <div id="js-bg-music" class='bg-music-warp modal-wrap'>
-        Background Music
-        <div class="bg-music-btn-wrap">
-            <div id="js-bg-music-on-btn" class="btn">ON</div>
-            <div id="js-bg-music-off-btn" class="btn">OFF</div>
+    <!-- Modal - Loading -->
+    <div id="js-loading" class="loading-warp modal-wrap">
+        <div class="modal-inner-warp">
+            Loading...
         </div>
     </div>
 
-    <!-- Ready modal -->
-    <div id="js-ready" class='ready-warp modal-wrap'>
-        <!-- bg -->
-        <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
-
-        <!-- card -->
-        <div class="game-cover">
-            <picture>
-                <source srcset="dist/assets/webps/cover.webp" type="image/webp">
-                <img class="front" src="dist/assets/img/cover.jpg" alt="card">
-            </picture>
-            <picture>
-                <source srcset="dist/assets/webps/icon.webp" type="image/webp">
-                <img id="js-game-cover-back" class="back" src="dist/assets/img/icon.png" alt="card">
-            </picture>
-        </div>
-        
-        <!-- language -->
-        <div id="js-language-btn-wrap" class="language-btn-wrap">
-            <div class="language-btn active" data-tab="section-1">中</div>
-            <div class="language-btn" data-tab="section-2">EN</div>
-        </div>
-
-        <!-- rules -->
-        <div id="js-game-rule-wrap" class="game-rule-wrap">
-            <div class="game-rule active" data-tab="section-1">
-                <h2>翻翻牌對對碰 注意事項</h2>
-                <ul>
-                    <li>3 列 8 欄 (24張) 12 種圖案的翻翻牌對對碰遊戲。</li>
-                    <li>遊戲規則：必須連續翻開兩張一樣的圖案，才能消除卡片。場上所有卡片都消失後即可獲勝。</li>
-                    <li>計時制：按下開始遊戲後即開始計時，花費秒數越少的話排名越高。</li>
-                    <li>重新開始：每次重新開始都會重新選出 12 種圖案並打亂排序。</li>
-                </ul>
-            </div>
-            <div class="game-rule" data-tab="section-2">
-                <h2>Game rules</h2>
-                <ul>
-                    <li>3 rows and 8 columns (24 cards) 12 patterns.</li>
-                    <li>The rules of the game: You must open two of the same patterns in a row to eliminate the cards. Win after all the cards on the field disappear.</li>
-                    <li>Timing system: The timing will start after you press the start button to start the game. The less seconds it takes, the higher the ranking.</li>
-                    <li>Restart: Each time you restart, 12 patterns will be re-selected and the order will be random.</li>
-                </ul>
+    <!-- Modal - Bg Music -->
+    <div id="js-bg-music" class="bg-music-warp modal-wrap">
+        <div class="modal-inner-warp">
+            Background Music
+            <div class="bg-music-btn-wrap">
+                <div id="js-bg-music-on-btn" class="btn style-black style-round size-large">ON</div>
+                <div id="js-bg-music-off-btn" class="btn style-black style-round size-large">OFF</div>
             </div>
         </div>
-
-        <!-- start btn -->
-        <div id="js-start-btn" class="start-btn btn">START</div>
     </div>
 
-    <!-- warn modal -->
-    <div class='warn_size modal-wrap'>
-        <p>視窗太小了！不給你看！</p>
+    <!-- Modal - Ready & rules -->
+    <div id="js-ready" class="ready-warp modal-wrap">
+        <div class="modal-inner-warp">
+            <!-- bg -->
+            <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
+
+            <!-- card -->
+            <div class="game-cover">
+                <picture>
+                    <source srcset="dist/assets/webps/card/cover.webp" type="image/webp">
+                    <img class="front" src="dist/assets/img/card/cover.jpg" alt="card">
+                </picture>
+                <picture>
+                    <source srcset="dist/assets/webps/icon.webp" type="image/webp">
+                    <img id="js-game-cover-back" class="back" src="dist/assets/img/icon.png" alt="card">
+                </picture>
+            </div>
+            
+            <!-- language -->
+            <div id="js-language-btn-wrap" class="language-btn-wrap">
+                <div class="language-btn active btn style-red style-square size-small" data-tab="section-1">中</div>
+                <div class="language-btn btn style-red style-square size-small" data-tab="section-2">EN</div>
+            </div>
+
+            <!-- rules -->
+            <div id="js-game-rule-wrap" class="game-rule-wrap">
+                <div class="game-rule active" data-tab="section-1">
+                    <h2 class="rule-caption">翻翻牌對對碰 注意事項</h2>
+                    <ul class="rule-list">
+                        <li class="rule-item">3 列 8 欄 (24張) 12 種圖案的翻翻牌對對碰遊戲。</li>
+                        <li class="rule-item">遊戲規則：必須連續翻開兩張一樣的圖案，才能消除卡片。場上所有卡片都消失後即可獲勝。</li>
+                        <li class="rule-item">計時制：按下開始遊戲後即開始計時，花費秒數越少的話排名越高。</li>
+                        <li class="rule-item">重新開始：每次重新開始都會重新選出 12 種圖案並打亂排序。</li>
+                    </ul>
+                </div>
+                <div class="game-rule" data-tab="section-2">
+                    <h2 class="rule-caption">Game rules</h2>
+                    <ul class="rule-list">
+                        <li class="rule-item">3 rows and 8 columns (24 cards) 12 patterns.</li>
+                        <li class="rule-item">The rules of the game: You must open two of the same patterns in a row to eliminate the cards. Win after all the cards on the field disappear.</li>
+                        <li class="rule-item">Timing system: The timing will start after you press the start button to start the game. The less seconds it takes, the higher the ranking.</li>
+                        <li class="rule-item">Restart: Each time you restart, 12 patterns will be re-selected and the order will be random.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- start btn -->
+            <div id="js-start-btn" class="start-btn btn style-black style-round size-large">START</div>
+        </div>
     </div>
 
-    <!-- reward modal -->
-    <div id="js-reward-wrap" class="reward-wrap modal-wrap"></div>
+    <!-- Modal - size warn -->
+    <div class="modal-wrap warn-size-wrap">
+        <div class="modal-inner-warp">
+            Recommended size over: 1365 x 750<br>
+            Current size: <span id="js-screen-w"></span> x <span id="js-screen-h"></span>
+        </div>
+    </div>
+
+    <!-- Modal - game over -->
+    <div id="js-game-over-wrap" class="game-over-wrap modal-wrap">
+        <div class="modal-inner-warp">
+            <div class="modal-header">
+                <h2 class="modal-caption">Time Up!</h2>
+            </div>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <picture>
+                        <source srcset="dist/assets/webps/kana_3.webp" type="image/webp">
+                        <img src="dist/assets/img/kana_3.png" alt="kana">
+                    </picture>
+                </div>
+                <div class="modal-text">
+                    <p class="js-game-over-des modal-des">
+                        You spend ${timeFormat(min)} minute(s) ${timeFormat(sec)}second(s)!
+                    </p>
+                    <label for="player-name">Please enter your name:</label>
+                    <input type="text" id="player-name">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div id="js-game-over-btn" class="btn style-black style-round size-large">Submit</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - reward -->
+    <div id="js-reward-wrap" class="reward-wrap modal-wrap">
+        <div class="modal-inner-warp"></div>
+    </div>
 
     
     <!-- audio -->
