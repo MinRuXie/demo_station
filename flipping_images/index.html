@@ -83,7 +83,7 @@
             <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
 
             <!-- card -->
-            <div class="game-cover">
+            <div id="js-card-intro-open-btn" class="game-cover">
                 <picture>
                     <source srcset="dist/assets/webps/card/cover.webp" type="image/webp">
                     <img class="front" src="dist/assets/img/card/cover.jpg" alt="card">
@@ -124,6 +124,14 @@
 
             <!-- start btn -->
             <div id="js-start-btn" class="start-btn btn style-black style-round size-large">START</div>
+        </div>
+    </div>
+
+    <!-- Modal - card intro -->
+    <div id="js-card-intro" class="card-intro-warp modal-wrap">
+        <div class="modal-inner-warp">
+            <div id="js-card-intro-btn" class="btn style-red style-round size-small">Back</div>
+            <div class="card-intro-wrap"></div>
         </div>
     </div>
 
