@@ -59,14 +59,14 @@
     </div>
     
     <!-- Modal - Loading -->
-    <div id="js-loading" class="loading-warp modal-wrap">
+    <div id="js-loading" class="loading-warp modal-wrap show">
         <div class="modal-inner-warp">
             Loading...
         </div>
     </div>
 
     <!-- Modal - Bg Music -->
-    <div id="js-bg-music" class="bg-music-warp modal-wrap">
+    <div id="js-bg-music" class="bg-music-warp modal-wrap show">
         <div class="modal-inner-warp">
             Background Music
             <div class="bg-music-btn-wrap">
@@ -76,24 +76,39 @@
         </div>
     </div>
 
-    <!-- Modal - Ready & rules -->
-    <div id="js-ready" class="ready-warp modal-wrap">
+    <!-- Modal - Ready -->
+    <div id="js-ready" class="ready-warp modal-wrap show">
         <div class="modal-inner-warp">
             <!-- bg -->
             <div class="ready-bg-wrap card-wrap ready-bg-column"></div>
 
-            <!-- card -->
-            <div id="js-card-intro-open-btn" class="game-cover">
+            <!-- start btn -->
+            <div id="js-start-btn" class="game-cover">
                 <picture>
                     <source srcset="dist/assets/webps/card/cover.webp" type="image/webp">
                     <img class="front" src="dist/assets/img/card/cover.jpg" alt="card">
                 </picture>
                 <picture>
                     <source srcset="dist/assets/webps/icon.webp" type="image/webp">
-                    <img id="js-game-cover-back" class="back" src="dist/assets/img/icon.png" alt="card">
+                    <img class="back" src="dist/assets/img/icon.png" alt="card">
                 </picture>
             </div>
-            
+
+            <h1 class="ready-caption">Cards Memory Game</h1>
+
+            <div class="btn-wrap">
+                <!-- rules btn -->
+                <div id="js-rules-btn" class="btn style-black style-round size-large">Rules</div>
+
+                <!-- view cards btn -->
+                <div id="js-card-intro-open-btn" class="btn style-black style-round size-large">View Cards</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Rules -->
+    <div id="js-rules" class="rules-warp modal-wrap">
+        <div class="modal-inner-warp">
             <!-- language -->
             <div id="js-language-btn-wrap" class="language-btn-wrap">
                 <div class="language-btn active btn style-red style-square size-small" data-tab="section-1">中</div>
@@ -122,21 +137,24 @@
                 </div>
             </div>
 
-            <!-- start btn -->
-            <div id="js-start-btn" class="start-btn btn style-black style-round size-large">START</div>
+            <!-- closed modal button -->
+            <div class="js-model-closed-btn btn style-red style-round size-small">Back</div>
         </div>
     </div>
 
     <!-- Modal - card intro -->
     <div id="js-card-intro" class="card-intro-warp modal-wrap">
         <div class="modal-inner-warp">
-            <div id="js-card-intro-btn" class="btn style-red style-round size-small">Back</div>
+            <!-- cards -->
             <div class="card-intro-wrap"></div>
+
+            <!-- closed modal button -->
+            <div class="js-model-closed-btn btn style-red style-round size-small">Back</div>
         </div>
     </div>
 
     <!-- Modal - size warn -->
-    <div class="modal-wrap warn-size-wrap">
+    <div class="modal-wrap warn-size-wrap show">
         <div class="modal-inner-warp">
             Recommended size over: 1365 x 750<br>
             Current size: <span id="js-screen-w"></span> x <span id="js-screen-h"></span>
