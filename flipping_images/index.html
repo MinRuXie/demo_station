@@ -74,9 +74,9 @@
     <div id="js-bg-music" class="bg-music-warp modal-wrap show">
         <div class="modal-inner-warp">
             Background Music
-            <div class="bg-music-btn-wrap">
-                <div id="js-bg-music-on-btn" class="btn style-black style-round size-large">ON</div>
-                <div id="js-bg-music-off-btn" class="btn style-black style-round size-large">OFF</div>
+            <div class="btn-wrap">
+                <div data-status="on" class="js-bg-music-btn btn style-black style-round size-large">ON</div>
+                <div data-status="off" class="js-bg-music-btn btn style-black style-round size-large">OFF</div>
             </div>
         </div>
     </div>
@@ -107,6 +107,12 @@
 
                 <!-- view cards btn -->
                 <div id="js-card-intro-open-btn" class="btn style-black style-round size-large">View Cards</div>
+            </div>
+
+            <!-- bg music btn -->
+            <div class="bg-music-wrap">
+                <div data-status="on" class="js-bg-music-btn btn style-red style-round size-small">ON</div>
+                <div data-status="off" class="js-bg-music-btn btn style-red style-round size-small">OFF</div>
             </div>
         </div>
     </div>
