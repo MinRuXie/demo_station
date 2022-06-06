@@ -292,6 +292,22 @@
         "des": "",
         "works": [
             {
+                "name": "flipping-cards-game",
+                "title": "翻翻牌對對碰遊戲",
+                "title_en": "Cards Memory Game",
+                "description": "卡片記憶遊戲",
+                "year": "2019-2022",
+                "image": "dist/assets/images/work/flipping_cards_game/thumbnail.png",
+                "webp": "dist/assets/images/webps/flipping_cards_game/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Gulp"],
+                "link": "https://minruxie.github.io/demo_station/flipping_images",
+                "github": "",
+                "info_contents": [
+                    "介面設計",
+                    "前端製作",
+                    "部分素材製作"
+                ]
+            },{
                 "name": "four-by-four",
                 "title": "4x4 圖片產生器",
                 "title_en": "FourByFour",
@@ -320,22 +336,6 @@
                 "github": "",
                 "info_contents": [
                     "功能發想",
-                    "介面設計",
-                    "前端製作"
-                ]
-            },{
-                "name": "flipping-cards-game",
-                "title": "翻翻牌對對碰遊戲",
-                "title_en": "FlippingCardsGame",
-                "description": "滑鼠操作之網頁遊戲",
-                "year": "2019-2021",
-                "image": "dist/assets/images/work/flipping_cards_game/thumbnail.png",
-                "webp": "dist/assets/images/webps/flipping_cards_game/thumbnail.webp",
-                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Gulp"],
-                "link": "https://minruxie.github.io/demo_station/flipping_images",
-                "github": "",
-                "info_contents": [
-                    "部分素材製作",
                     "介面設計",
                     "前端製作"
                 ]
@@ -439,7 +439,7 @@
                 "name": "escape-room-game",
                 "title": "逃離房間遊戲",
                 "title_en": "EscapeRoomGame",
-                "description": "滑鼠操作之網頁遊戲",
+                "description": "解謎遊戲",
                 "year": "2017",
                 "image": "dist/assets/images/work/escape/escape_room_game_1.png",
                 "webp": "dist/assets/images/webps/escape/escape_room_game_1.webp",
