@@ -1,1 +1,1 @@
-import Nav from"../templates/nav.js";const container='\n<div>\n    <Nav />\n    <transition name="fade">\n        <router-view></router-view>\n    </transition>\n</div>\n',Container={template:container,components:{Nav:Nav}};export default Container;
+import Nav from"../templates/nav.js";const container='\n<section>\n    <Nav />\n    <transition name="fade">\n        <router-view></router-view>\n    </transition>\n</section>\n',Container={template:container,components:{Nav:Nav}};export default Container;
