@@ -28,7 +28,7 @@
                 "image": "dist/assets/images/work/andmakers/thumbnail.jpeg",
                 "webp": "dist/assets/images/webps/andmakers/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Vue.js", "Owl Carousel 2"],
-                "link": "",
+                "link": "https://andmakers.co/",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
