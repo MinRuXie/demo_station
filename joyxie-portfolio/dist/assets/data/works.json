@@ -6,6 +6,23 @@
         "des": "",
         "works": [
             {
+                "name": "fem_the-sunset-terminal",
+                "title": "落日轉運站",
+                "title_en": "The Sunset Terminal",
+                "description": "活動 & 購票頁面（多頁式）",
+                "year": "2022",
+                "image": "dist/assets/images/work/sunset_terminal/thumbnail.png",
+                "webp": "dist/assets/images/webps/sunset_terminal/thumbnail.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
+                "link": "",
+                "github": "",
+                "info_contents": [
+                    "全站共用樣式 & 元件",
+                    "Navigation",
+                    "前端切版：購票頁面 Step 1. ~ 4.、活動頁面-規則頁、活動頁面-首頁 TOUR 區塊",
+                    "欄位驗證：必填、電話格式、E-mail格式"
+                ]
+            },{
                 "name": "fem_dining-in-the-dark-3",
                 "title": "無光晚餐第三季",
                 "title_en": "Dining in the dark 3",
