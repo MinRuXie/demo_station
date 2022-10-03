@@ -439,7 +439,7 @@
                 "title": "勞務報酬計算機",
                 "title_en": "QuoteCalculation",
                 "description": "報價金額 ←→ 實領金額",
-                "year": "2019-2021",
+                "year": "2019-2022",
                 "image": "dist/assets/images/work/quote_calculation/thumbnail.png",
                 "webp": "dist/assets/images/webps/quote_calculation/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "Vue.js"],
