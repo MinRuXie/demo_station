@@ -32,109 +32,143 @@
             <div id="app" class="card">
                 <h2>報價計算機</h2>
                 <div  class="grid-wrap">
-                    <div class="grid-item layout-left">報價（支領金額）</div>
-                    <div class="grid-item layout-right">
-                        <div>{{getTaxIncludedQuotation}}</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(quotation)[4] }}</span>萬
-                            <span>{{ getChineseNumber(quotation)[3] }}</span>千
-                            <span>{{ getChineseNumber(quotation)[2] }}</span>百
-                            <span>{{ getChineseNumber(quotation)[1] }}</span>拾
-                            <span>{{ getChineseNumber(quotation)[0] }}</span>元
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">報價（支領金額）</div>
+                        <div class="grid-item layout-right">
+                            <div>{{getTaxIncludedQuotation}}</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(quotation)[4] }}萬</span>
+                                <span>{{ getChineseNumber(quotation)[3] }}千</span>
+                                <span>{{ getChineseNumber(quotation)[2] }}百</span>
+                                <span>{{ getChineseNumber(quotation)[1] }}拾</span>
+                                <span>{{ getChineseNumber(quotation)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="grid-item layout-left">
-                        <label for="health_insurance_fare">
-                            健保補充保費 2.11%<br>（報價>=20K）
-                        </label>
-                        <input type="checkbox" id="health_insurance_fare" name="insurance" v-model="health_toggle">
-                    </div>
-                    <div class="grid-item layout-right">
-                        <div>{{getHealthInsurance}} (四捨五入)</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(health_insurance)[4] }}</span>萬
-                            <span>{{ getChineseNumber(health_insurance)[3] }}</span>千
-                            <span>{{ getChineseNumber(health_insurance)[2] }}</span>百
-                            <span>{{ getChineseNumber(health_insurance)[1] }}</span>拾
-                            <span>{{ getChineseNumber(health_insurance)[0] }}</span>元
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">
+                            <input type="checkbox" id="health_insurance_fare" name="insurance" v-model="health_toggle">
+                            <label for="health_insurance_fare">
+                                健保補充保費 2.11%<br>（報價>=20K）
+                            </label>
+                        </div>
+                        <div class="grid-item layout-right">
+                            <div>{{getHealthInsurance}} (四捨五入)</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(health_insurance)[4] }}萬</span>
+                                <span>{{ getChineseNumber(health_insurance)[3] }}千</span>
+                                <span>{{ getChineseNumber(health_insurance)[2] }}百</span>
+                                <span>{{ getChineseNumber(health_insurance)[1] }}拾</span>
+                                <span>{{ getChineseNumber(health_insurance)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="grid-item layout-left">
-                        <label for="income_tax_fare">
-                            代扣所得稅 10%<br>（報價>20K）
-                        </label>
-                        <input type="checkbox" id="income_tax_fare" name="income_tax" v-model="income_tax_toggle">
-                    </div>
-                    <div class="grid-item layout-right">
-                        <div>{{getIncomeTax}} (四捨五入)</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(income_tax)[4] }}</span>萬
-                            <span>{{ getChineseNumber(income_tax)[3] }}</span>千
-                            <span>{{ getChineseNumber(income_tax)[2] }}</span>百
-                            <span>{{ getChineseNumber(income_tax)[1] }}</span>拾
-                            <span>{{ getChineseNumber(income_tax)[0] }}</span>元
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">
+                            <input type="checkbox" id="income_tax_fare" name="income_tax" v-model="income_tax_toggle">
+                            <label for="income_tax_fare">
+                                代扣所得稅 10%<br>（報價>20K）
+                            </label>
+                        </div>
+                        <div class="grid-item layout-right">
+                            <div>{{getIncomeTax}} (四捨五入)</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(income_tax)[4] }}萬</span>
+                                <span>{{ getChineseNumber(income_tax)[3] }}千</span>
+                                <span>{{ getChineseNumber(income_tax)[2] }}百</span>
+                                <span>{{ getChineseNumber(income_tax)[1] }}拾</span>
+                                <span>{{ getChineseNumber(income_tax)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="grid-item layout-left">最終實領（支領淨額）</div>
-                    <div class="grid-item layout-right">
-                        <input type="number" min="0" placeholder="請輸入金額" v-model="final_actual_collar">
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">最終實領（支領淨額）</div>
+                        <div class="grid-item layout-right">
+                            <div>
+                                <input type="number" min="0" placeholder="請輸入金額" v-model="final_actual_collar">
+                            </div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(final_actual_collar)[4] }}萬</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[3] }}千</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[2] }}百</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[1] }}拾</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[0] }}元</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="app2" class="card">
                 <h2>最終實領計算機</h2>
                 <div class="grid-wrap">
-                    <div class="grid-item layout-left">報價（支領金額）</div>
-                    <div class="grid-item layout-right">
-                        <input type="number" min="0" placeholder="請輸入金額" v-model="quotation">
-                    </div>
-                    
-                    <div class="grid-item layout-left">
-                        <label for="health_insurance_fare-2">
-                            健保補充保費 2.11%<br>（報價>=20K）
-                        </label>
-                        <input type="checkbox" id="health_insurance_fare-2" name="insurance" v-model="health_toggle">
-                    </div>
-                    <div class="grid-item layout-right">
-                        <div>{{getHealthInsurance}} (四捨五入)</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(health_insurance)[4] }}</span>萬
-                            <span>{{ getChineseNumber(health_insurance)[3] }}</span>千
-                            <span>{{ getChineseNumber(health_insurance)[2] }}</span>百
-                            <span>{{ getChineseNumber(health_insurance)[1] }}</span>拾
-                            <span>{{ getChineseNumber(health_insurance)[0] }}</span>元
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">報價（支領金額）</div>
+                        <div class="grid-item layout-right">
+                            <div>
+                                <input type="number" min="0" placeholder="請輸入金額" v-model="quotation">
+                            </div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(quotation)[4] }}萬</span>
+                                <span>{{ getChineseNumber(quotation)[3] }}千</span>
+                                <span>{{ getChineseNumber(quotation)[2] }}百</span>
+                                <span>{{ getChineseNumber(quotation)[1] }}拾</span>
+                                <span>{{ getChineseNumber(quotation)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
-    
-                    <div class="grid-item layout-left">
-                        <label for="income_tax_fare-2">
-                            代扣所得稅 10%<br>（報價>20K）
-                        </label>
-                        <input type="checkbox" id="income_tax_fare-2" name="income_tax" v-model="income_tax_toggle">
-                    </div>
-                    <div class="grid-item layout-right">
-                        <div>{{getIncomeTax}} (四捨五入)</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(income_tax)[4] }}</span>萬
-                            <span>{{ getChineseNumber(income_tax)[3] }}</span>千
-                            <span>{{ getChineseNumber(income_tax)[2] }}</span>百
-                            <span>{{ getChineseNumber(income_tax)[1] }}</span>拾
-                            <span>{{ getChineseNumber(income_tax)[0] }}</span>元
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">
+                            <input type="checkbox" id="health_insurance_fare-2" name="insurance" v-model="health_toggle">
+                            <label for="health_insurance_fare-2">
+                                健保補充保費 2.11%<br>（報價>=20K）
+                            </label>
+                        </div>
+                        <div class="grid-item layout-right">
+                            <div>{{getHealthInsurance}} (四捨五入)</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(health_insurance)[4] }}萬</span>
+                                <span>{{ getChineseNumber(health_insurance)[3] }}千</span>
+                                <span>{{ getChineseNumber(health_insurance)[2] }}百</span>
+                                <span>{{ getChineseNumber(health_insurance)[1] }}拾</span>
+                                <span>{{ getChineseNumber(health_insurance)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="grid-item layout-left">最終實領（支領淨額）</div>
-                    <div class="grid-item layout-right">
-                        <div>{{getFinalActualCollar}}</div>
-                        <div class="chinese-wrap">
-                            <span>{{ getChineseNumber(final_actual_collar)[4] }}</span>萬
-                            <span>{{ getChineseNumber(final_actual_collar)[3] }}</span>千
-                            <span>{{ getChineseNumber(final_actual_collar)[2] }}</span>百
-                            <span>{{ getChineseNumber(final_actual_collar)[1] }}</span>拾
-                            <span>{{ getChineseNumber(final_actual_collar)[0] }}</span>元
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">
+                            <input type="checkbox" id="income_tax_fare-2" name="income_tax" v-model="income_tax_toggle">
+                            <label for="income_tax_fare-2">
+                                代扣所得稅 10%<br>（報價>20K）
+                            </label>
+                        </div>
+                        <div class="grid-item layout-right">
+                            <div>{{getIncomeTax}} (四捨五入)</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(income_tax)[4] }}萬</span>
+                                <span>{{ getChineseNumber(income_tax)[3] }}千</span>
+                                <span>{{ getChineseNumber(income_tax)[2] }}百</span>
+                                <span>{{ getChineseNumber(income_tax)[1] }}拾</span>
+                                <span>{{ getChineseNumber(income_tax)[0] }}元</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-row">
+                        <div class="grid-item layout-left">最終實領（支領淨額）</div>
+                        <div class="grid-item layout-right">
+                            <div>{{getFinalActualCollar}}</div>
+                            <div class="chinese-wrap">
+                                <span>{{ getChineseNumber(final_actual_collar)[4] }}萬</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[3] }}千</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[2] }}百</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[1] }}拾</span>
+                                <span>{{ getChineseNumber(final_actual_collar)[0] }}元</span>
+                            </div>
                         </div>
                     </div>
                 </div>
