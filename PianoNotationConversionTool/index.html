@@ -42,21 +42,22 @@
                 </div>
                 <div class="toolbox">
                     <div id="toolbox-btn"></div>
-                    <div class="toolbutton" title="Backspace">{{ $t('toolbox.__delete_note') }}</div>
-                    <div class="toolbutton" title="Space">{{ $t('toolbox.__space_note') }}</div>
+                    <div id="js-note-remove" class="toolbutton" title="Backspace">{{ $t('toolbox.__delete_note') }}</div>
+                    <div id="js-note-space" class="toolbutton" title="Space">{{ $t('toolbox.__space_note') }}</div>
                     <hr>
-                    <div class="toolbutton" title="Enter">{{ $t('toolbox.__add_line') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__copy_line') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__move_up_line') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__move_down_line') }}</div>
+                    <div id="js-line-add" class="toolbutton" title="Enter">{{ $t('toolbox.__add_line') }}</div>
+                    <div id="js-line-copy" class="toolbutton" title="none">{{ $t('toolbox.__copy_line') }}</div>
+                    <div id="js-line-break" class="toolbutton" title="none">{{ $t('toolbox.__break_line') }}</div>
+                    <div id="js-line-move-up" class="toolbutton" title="none">{{ $t('toolbox.__move_up_line') }}</div>
+                    <div id="js-line-move-down" class="toolbutton" title="none">{{ $t('toolbox.__move_down_line') }}</div>
                     <hr>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__show_piano') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__hidden_piano') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__switch_mode') }}</div>
+                    <div id="js-piano-show" class="toolbutton" title="none">{{ $t('toolbox.__show_piano') }}</div>
+                    <div id="js-piano-hide" class="toolbutton" title="none">{{ $t('toolbox.__hidden_piano') }}</div>
+                    <div id="js-switch-panel" class="toolbutton" title="none">{{ $t('toolbox.__switch_mode') }}</div>
                     <hr>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__output_result') }}</div>
-                    <div class="toolbutton" title="none">{{ $t('toolbox.__function_description') }}</div>
-                    <div class="toolbutton" title="none" v-on:click="switchLanguage">{{ $t('toolbox.__switch_lang') }}</div>
+                    <div id="js-ouput-result" class="toolbutton" title="none">{{ $t('toolbox.__output_result') }}</div>
+                    <div id="js-intro" class="toolbutton" title="none">{{ $t('toolbox.__function_description') }}</div>
+                    <div id="js-switch-lang" class="toolbutton" title="none" v-on:click="switchLanguage">{{ $t('toolbox.__switch_lang') }}</div>
                 </div>
                 <div class="piano">
                     <div class="slide"></div>
