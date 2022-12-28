@@ -213,7 +213,7 @@
                 "name": "cms_trouble-care-v2",
                 "title": "Trouble Care 妳的煩惱顧問",
                 "title_en": "Trouble Care",
-                "description": "前端製作（V2）",
+                "description": "前端製作（V2） & 維護",
                 "year": "2020-2022",
                 "image": "dist/assets/images/work/trouble_care_v2/trouble-care_logo.png",
                 "webp": "dist/assets/images/webps/trouble_care_v2/trouble-care_logo.webp",
@@ -229,7 +229,7 @@
                 "name": "cms_purestyle-note-v1",
                 "title": "PureStyle Note",
                 "title_en": "PureStyle Note",
-                "description": "版面設計 & 前端製作（V1）",
+                "description": "版面設計 & 前端製作 & 維護",
                 "year": "2020-2022",
                 "image": "dist/assets/images/work/pure_style_v1/logo.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
@@ -323,6 +323,22 @@
         "des": "",
         "works": [
             {
+                "name": "sp_piano-notation-conversion-tool",
+                "title": "鋼琴簡譜/五線譜撰寫工具",
+                "title_en": "PianoNotationConversionTool",
+                "description": "鋼琴鍵盤介面",
+                "year": "2019-2022",
+                "image": "dist/assets/images/work/piano/piano_notation_conversion_tool_1.png",
+                "webp": "dist/assets/images/webps/piano/piano_notation_conversion_tool_1.webp",
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "vue-i18n", "Gulp"],
+                "link": "https://minruxie.github.io/demo_station/PianoNotationConversionTool",
+                "github": "",
+                "info_contents": [
+                    "功能發想",
+                    "介面設計",
+                    "前端製作"
+                ]
+            },{
                 "name": "sp_quote-calculation",
                 "title": "勞務報酬計算機",
                 "title_en": "QuoteCalculation",
@@ -380,22 +396,6 @@
                 "webp": "dist/assets/images/webps/comic_reader/cover.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
                 "link": "https://minruxie.github.io/demo_station/comicReader",
-                "github": "",
-                "info_contents": [
-                    "功能發想",
-                    "介面設計",
-                    "前端製作"
-                ]
-            },{
-                "name": "sp_piano-notation-conversion-tool",
-                "title": "鋼琴簡譜/五線譜撰寫工具",
-                "title_en": "PianoNotationConversionTool",
-                "description": "鋼琴鍵盤介面",
-                "year": "2019-2021",
-                "image": "dist/assets/images/work/piano/piano_notation_conversion_tool_1.png",
-                "webp": "dist/assets/images/webps/piano/piano_notation_conversion_tool_1.webp",
-                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "vue-i18n", "Gulp"],
-                "link": "https://minruxie.github.io/demo_station/PianoNotationConversionTool",
                 "github": "",
                 "info_contents": [
                     "功能發想",
