@@ -14,7 +14,7 @@
                 "image": "dist/assets/images/work/sunset_terminal/thumbnail.png",
                 "webp": "dist/assets/images/webps/sunset_terminal/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap"],
-                "link": "",
+                "link": "https://www.surpriselab.com.tw/terminal",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
