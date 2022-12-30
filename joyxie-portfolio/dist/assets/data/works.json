@@ -210,6 +210,22 @@
         "des": "",
         "works": [
             {
+                "name": "cms_all-in-v2",
+                "title": "All-in 專業推薦 (V2)",
+                "title_en": "All-in (Version 2)",
+                "description": "GA 事件 & 前端效果 & 維護",
+                "year": "2019-2022",
+                "image": "dist/assets/images/work/all_in_v2/thumbnail.jpg",
+                "webp": "dist/assets/images/webps/all_in_v2/thumbnail.webp",
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "GA Event"],
+                "link": "https://all-in.tw/",
+                "github": "",
+                "info_contents": [
+                    "GA 事件埋設",
+                    "部分前端效果與功能",
+                    "維護 & 持續調整版面"
+                ]
+            },{
                 "name": "cms_trouble-care-v2",
                 "title": "Trouble Care 妳的煩惱顧問",
                 "title_en": "Trouble Care",
@@ -217,13 +233,14 @@
                 "year": "2020-2022",
                 "image": "dist/assets/images/work/trouble_care_v2/trouble-care_logo.png",
                 "webp": "dist/assets/images/webps/trouble_care_v2/trouble-care_logo.webp",
-                "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "HTML Email"],
                 "link": "https://trouble-care.com/",
                 "github": "",
                 "info_contents": [
                     "全站樣式製作",
                     "部分前端效果與功能",
-                    "維護 & 持續調整版面"
+                    "維護 & 持續調整版面",
+                    "HTML Email 電子報"
                 ]
             },{
                 "name": "cms_purestyle-note-v1",
@@ -233,13 +250,14 @@
                 "year": "2020-2022",
                 "image": "dist/assets/images/work/pure_style_v1/logo.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
-                "tags": ["WordPress", "Adobe XD", "HTML", "CSS", "JavaScript", "jQuery"],
+                "tags": ["WordPress", "Adobe XD", "HTML", "CSS", "JavaScript", "jQuery", "HTML Email"],
                 "link": "https://purestyle-note.com/",
                 "github": "",
                 "info_contents": [
                     "全站樣式設計 & 製作",
                     "部分前端效果與功能",
-                    "維護 & 持續調整版面"
+                    "維護 & 持續調整版面",
+                    "HTML Email 電子報"
                 ]
             },{
                 "name": "cms_xingfutang-newyork",
@@ -271,9 +289,9 @@
                 ]
             },{
                 "name": "cms_all-in-v3",
-                "title": "All-in 專業推薦",
-                "title_en": "All-in",
-                "description": "版面設計（V3）- 未採用",
+                "title": "All-in 專業推薦 (V3)",
+                "title_en": "All-in (Version 3)",
+                "description": "版面設計 - 未採用",
                 "year": "2019",
                 "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
                 "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
@@ -285,12 +303,12 @@
                 ]
             },{
                 "name": "cms_all-in-v1",
-                "title": "All-in 專業推薦",
-                "title_en": "All-in",
-                "description": "前端製作（V1）- 已撤換",
+                "title": "All-in 專業推薦 (V1)",
+                "title_en": "All-in (Version 1)",
+                "description": "前端製作 - 已撤換",
                 "year": "2019",
-                "image": "dist/assets/images/work/all_in_v1/all_in_banner.jpg",
-                "webp": "dist/assets/images/webps/all_in_v1/all_in_banner.webp",
+                "image": "dist/assets/images/work/all_in_v1/thumbnail.png",
+                "webp": "dist/assets/images/webps/all_in_v1/thumbnail.webp",
                 "tags": ["WordPress", "HTML", "CSS", "JavaScript"],
                 "link": "https://all-in.tw/",
                 "github": "",
