@@ -50,8 +50,8 @@
                 "info_contents": [
                     "全站共用樣式 & 元件",
                     "Navigation、Footer", 
-                    "前端切版：除了 ABOUT",
-                    "串接 JSON 資料：HOME Retailers、HOME FAQs、Catalog Category、Catalog Review、FAQs"
+                    "前端切版：除了 ABOUT 頁面",
+                    "串接 JSON 資料"
                 ]
             },{
                 "name": "fem_surpriselab",
@@ -82,7 +82,7 @@
                 "github": "",
                 "info_contents": [
                     "前端切版",
-                    "串接 JSON 資料：Hero、Product、Review"
+                    "串接 JSON 資料"
                 ]
             },{
                 "name": "fem_telephonebooth",
