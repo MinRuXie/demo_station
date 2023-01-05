@@ -51,7 +51,7 @@
                     "全站共用樣式 & 元件",
                     "Navigation、Footer", 
                     "前端切版：除了 ABOUT 頁面",
-                    "串接 JSON 資料"
+                    "串接 JSON 資料，顯示資料於畫面"
                 ]
             },{
                 "name": "fem_surpriselab",
@@ -82,7 +82,7 @@
                 "github": "",
                 "info_contents": [
                     "前端切版",
-                    "串接 JSON 資料"
+                    "串接 JSON 資料，顯示資料於畫面"
                 ]
             },{
                 "name": "fem_telephonebooth",
@@ -513,7 +513,7 @@
                 "title": "PureStyle Note",
                 "title_en": "PureStyle Note",
                 "description": "版面設計 - 採用",
-                "year": "2020-2022",
+                "year": "2020",
                 "image": "dist/assets/images/work/pure_style_v1/logo.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
                 "tags": ["WordPress", "Adobe XD", "Adobe Photoshop"],
