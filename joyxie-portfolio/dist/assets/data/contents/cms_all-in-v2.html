@@ -13,8 +13,9 @@
 
         <h4>專家列表 - 動態頁碼功能</h4>
         <ul class="block-wrap">
-            <li>分頁：動態計算專家(作者)數量，以每頁18人為單位劃分頁數。</li>
-            <li>頁碼：固定顯示頭尾頁數，及目前頁數的前後兩個頁碼，其餘省略顯示。</li>
+            <li>資料：只顯示權限為「作者」的使用者。</li>
+            <li>分頁：動態計算專家（作者）數量，以每頁 18 人為單位來劃分頁數。</li>
+            <li>頁碼：固定顯示頭尾頁數、目前頁數及其前後頁碼，其餘省略顯示。</li>
         </ul>
 
         <!-- image: 1 column 100% width -->
@@ -44,6 +45,7 @@
         <h4>1920*1080 電腦版 - 粉專宣傳 Modal</h4>
         <ul class="block-wrap">
             <li>觸發時機：載入首頁、右側固定按鈕</li>
+            <li>此為手刻 Modal，並在其中放置 WordPress 電子報外掛的表單小工具。</li>
         </ul>
         <!-- pc device -->
         <div class="device-wrap pc-dev-wrap" style="--device-w:1920; --device-h:1080;">
@@ -83,8 +85,12 @@
 
 
         <h3>文章頁的推薦文章列表</h3>
+        <ul class="block-wrap">
+            <li>資料：此篇文章的同分類隨機文章 7 篇。</li>
+        </ul>
 
         <h4>同分類隨機文章</h4>
+        
         <!-- image: 1 column 100% width -->
         <div class="img-wrap">
             <picture>
@@ -93,7 +99,7 @@
             </picture>
         </div>
 
-        <p>文章摘要取自文章前言：</p>
+        <p>文章摘要取自文章前 80 字：</p>
 
         <!-- image: 1 column 100% width -->
         <div class="img-wrap">
@@ -112,7 +118,7 @@
             </picture>
         </div>
 
-        <p>文章摘要取自灰底區塊：需特別抓取</p>
+        <p>文章摘要取自灰底區塊前 80 字：使用正則表達式篩選抓取。</p>
 
         <!-- image: 1 column 100% width -->
         <div class="img-wrap">

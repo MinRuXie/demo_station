@@ -348,8 +348,8 @@
                 "title_en": "QuoteCalculation",
                 "description": "報價金額 ←→ 實領金額",
                 "year": "2019-2022",
-                "image": "dist/assets/images/work/quote_calculation/thumbnail.png",
-                "webp": "dist/assets/images/webps/quote_calculation/thumbnail.webp",
+                "image": "dist/assets/images/work/quote_calculation/thumbnail_2.png",
+                "webp": "dist/assets/images/webps/quote_calculation/thumbnail_2.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "Vue.js"],
                 "link": "https://minruxie.github.io/demo_station/quote-calculation",
                 "github": "",
@@ -491,14 +491,14 @@
                 "title": "Joy Xie 作品集",
                 "title_en": "Joy Xie Portfolio",
                 "description": "此作品集網站",
-                "year": "2019-2022",
-                "image": "dist/assets/images/work/coming-soon.png",
-                "webp": "dist/assets/images/webps/coming-soon.webp",
+                "year": "2019-2023",
+                "image": "dist/assets/images/work/joyxie_portfolio/thumbnail.png",
+                "webp": "dist/assets/images/webps/joyxie_portfolio/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Vue.js", "Vue-router.js"],
                 "link": "",
                 "github": "",
                 "info_contents": [
-                    "前端製作"
+                    "前端製作 & 更新維護"
                 ]
             }
         ]

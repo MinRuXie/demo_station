@@ -1,19 +1,50 @@
 <h3>功能介紹</h3>
 
 <h4>報價計算機</h4>
-<p>輸入 實領金額 推導出 報價金額。</p>
+<p>輸入 <span class="inline-wrap">實領金額</span> 推導出 <span class="inline-wrap">報價金額</span>。</p>
 
 <div class="block-wrap">
     <p>最終實領(支領淨額) + 健保費 + 所得稅 = 報價(支領金額)</p>
-    <p>X -0.0211X -0.1X = (1 -0.1 -0.0211)X</p>
+    <p>X/(1 -0.1 -0.0211) - 0.1X/(1 -0.1 -0.0211) - 0.0211X/(1 -0.1 -0.0211) = X</p>
+</div>
+<br>
+<ul>
+    <li>報價（支領金額） <span class="inline-wrap">X/(1 -0.1 -0.0211)</span> (輸出)</li>
+    <li>健保費（四捨五入） <span class="inline-wrap">0.0211X/(1 -0.1 -0.0211)</span></li>
+    <li>所得稅（四捨五入） <span class="inline-wrap">0.1X/(1 -0.1 -0.0211)</span></li>
+    <li>最終實領（支領淨額） <span class="inline-wrap">X</span> (輸入)</li>
+</ul>
+
+<!-- image: 1 column 450px width -->
+<div class="img-wrap column-1">
+    <picture>
+        <source srcset="dist/assets/images/webps/quote_calculation/feature_1.webp" type="image/webp">
+        <img src="dist/assets/images/work/quote_calculation/feature_1.png" />
+    </picture>
 </div>
 
+
 <h4>最終實領計算機</h4>
-<p>輸入 報價(支領金額) 推導出 最終實領(支領淨額)</p>
+<p>輸入 <span class="inline-wrap">報價金額</span> 推導出 <span class="inline-wrap">實領金額</span>。</p>
 
 <div class="block-wrap">
     <p>報價(支領金額) - 健保費 - 所得稅 = 最終實領(支領淨額)</p>
-    <p>X/(1 -0.1 -0.0211) - 0.1X/(1 -0.1 -0.0211) - 0.0211X/(1 -0.1 -0.0211) = X</p>
+    <p>X -0.0211X -0.1X = (1 -0.1 -0.0211)X</p>
+</div>
+<br>
+<ul>
+    <li>報價（支領金額） <span class="inline-wrap">X</span> (輸入)</li>
+    <li>健保費（四捨五入） <span class="inline-wrap">0.0211X</span></li>
+    <li>所得稅（四捨五入） <span class="inline-wrap">0.1X</span></li>
+    <li>最終實領（支領淨額） <span class="inline-wrap">(1 -0.1 -0.0211)X</span> (輸出)</li>
+</ul>
+
+<!-- image: 1 column 450px width -->
+<div class="img-wrap column-1">
+    <picture>
+        <source srcset="dist/assets/images/webps/quote_calculation/feature_2.webp" type="image/webp">
+        <img src="dist/assets/images/work/quote_calculation/feature_2.png" />
+    </picture>
 </div>
 
 
