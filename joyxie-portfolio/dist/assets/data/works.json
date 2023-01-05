@@ -217,7 +217,7 @@
                 "year": "2019-2022",
                 "image": "dist/assets/images/work/all_in_v2/thumbnail.jpg",
                 "webp": "dist/assets/images/webps/all_in_v2/thumbnail.webp",
-                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "GA Event"],
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "jQuery", "PHP", "GA Event"],
                 "link": "https://all-in.tw/",
                 "github": "",
                 "info_contents": [
@@ -246,15 +246,15 @@
                 "name": "cms_purestyle-note-v1",
                 "title": "PureStyle Note",
                 "title_en": "PureStyle Note",
-                "description": "版面設計 & 前端製作 & 維護",
+                "description": "前端製作 & 維護",
                 "year": "2020-2022",
                 "image": "dist/assets/images/work/pure_style_v1/logo.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
-                "tags": ["WordPress", "Adobe XD", "HTML", "CSS", "JavaScript", "jQuery", "HTML Email"],
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "jQuery", "HTML Email"],
                 "link": "https://purestyle-note.com/",
                 "github": "",
                 "info_contents": [
-                    "全站樣式設計 & 製作",
+                    "全站樣式製作",
                     "部分前端效果與功能",
                     "維護 & 持續調整版面",
                     "HTML Email 電子報"
@@ -286,20 +286,6 @@
                 "github": "",
                 "info_contents": [
                     "前端樣式調整"
-                ]
-            },{
-                "name": "cms_all-in-v3",
-                "title": "All-in 專業推薦 (V3)",
-                "title_en": "All-in (Version 3)",
-                "description": "版面設計 - 未採用",
-                "year": "2019",
-                "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
-                "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
-                "tags": ["WordPress", "Adobe XD"],
-                "link": "https://all-in.tw/",
-                "github": "",
-                "info_contents": [
-                    "全站樣式設計"
                 ]
             },{
                 "name": "cms_all-in-v1",
@@ -499,6 +485,42 @@
                     "關卡設計",
                     "圖片繪製",
                     "前端製作"
+                ]
+            }
+        ]
+    },{
+        "category": "web-design",
+        "title_en": "Web design",
+        "title_ch": "網頁設計作品",
+        "des": "",
+        "works": [
+            {
+                "name": "wd_purestyle-note-v1",
+                "title": "PureStyle Note",
+                "title_en": "PureStyle Note",
+                "description": "版面設計 - 採用",
+                "year": "2020-2022",
+                "image": "dist/assets/images/work/pure_style_v1/logo.png",
+                "webp": "dist/assets/images/webps/pure_style_v1/logo.webp",
+                "tags": ["WordPress", "Adobe XD", "Adobe Photoshop"],
+                "link": "https://purestyle-note.com/",
+                "github": "",
+                "info_contents": [
+                    "全站樣式設計"
+                ]
+            },{
+                "name": "wd_all-in-v3",
+                "title": "All-in 專業推薦 (V3)",
+                "title_en": "All-in (Version 3)",
+                "description": "版面設計 - 未採用",
+                "year": "2019",
+                "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
+                "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
+                "tags": ["WordPress", "Adobe XD"],
+                "link": "https://all-in.tw/",
+                "github": "",
+                "info_contents": [
+                    "全站樣式設計"
                 ]
             }
         ]
