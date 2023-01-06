@@ -334,7 +334,7 @@
                 "year": "2019-2022",
                 "image": "dist/assets/images/work/piano/piano_notation_conversion_tool_1.png",
                 "webp": "dist/assets/images/webps/piano/piano_notation_conversion_tool_1.webp",
-                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "vue-i18n", "Gulp"],
+                "tags": ["HTML", "SCSS", "JavaScript", "jQuery", "Vue.js", "vue-i18n", "html2canvas",  "Gulp"],
                 "link": "https://minruxie.github.io/demo_station/PianoNotationConversionTool",
                 "github": "",
                 "info_contents": [
