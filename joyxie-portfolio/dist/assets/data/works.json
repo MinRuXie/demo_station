@@ -2,7 +2,7 @@
     {
         "category": "front-end-making",
         "title_en": "Front-end Making",
-        "title_ch": "前端製作",
+        "title_ch": "前端製作/切版",
         "des": "",
         "works": [
             {
@@ -311,14 +311,14 @@
                 "name": "cms_xingfutang-newyork",
                 "title": "XingFuTang - NewYork",
                 "title_en": "XingFuTangNewYork",
-                "description": "前端製作 - 連結死亡中",
+                "description": "前端製作",
                 "year": "2020",
                 "image": "dist/assets/images/work/xingfutang/xingfutang_logo.png",
                 "webp": "dist/assets/images/webps/xingfutang/xingfutang_logo.webp",
                 "image_mobile": "dist/assets/images/work/xingfutang/xingfutang_logo.png",
                 "webp_mobile": "dist/assets/images/webps/xingfutang/xingfutang_logo.webp",
                 "tags": ["Squarespace", "CSS", "JavaScript", "jQuery"],
-                "link": "https://www.usaxingfutang.com/",
+                "link": "",
                 "demo": "",
                 "github": "",
                 "info_contents": [
@@ -380,7 +380,108 @@
             }
         ]
     },{
-        "id": 2,
+        "category": "web-design",
+        "title_en": "Web design",
+        "title_ch": "網頁設計作品",
+        "des": "",
+        "works": [
+            {
+                "name": "wd_purestyle-note-v1",
+                "title": "PureStyle Note",
+                "title_en": "PureStyle Note",
+                "description": "版面設計 - 採用",
+                "year": "2020",
+                "image": "dist/assets/images/work/pure_style_v1/thumbnail.png",
+                "webp": "dist/assets/images/webps/pure_style_v1/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/pure_style_v1/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/pure_style_v1/thumbnail-mobile.webp",
+                "tags": ["WordPress", "Adobe XD", "Adobe Photoshop"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "全站樣式設計"
+                ]
+            },{
+                "name": "wd_all-in-v3",
+                "title": "All-in 專業推薦 (V3)",
+                "title_en": "All-in (Version 3)",
+                "description": "版面設計 - 未採用",
+                "year": "2019",
+                "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
+                "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/all_in_v3/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/all_in_v3/thumbnail-mobile.webp",
+                "tags": ["WordPress", "Adobe XD"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "全站樣式設計"
+                ]
+            }
+        ]
+    },{
+        "category": "graphic-design",
+        "title_en": "Graphic design",
+        "title_ch": "平面設計作品",
+        "des": "",
+        "works": [
+            {
+                "name": "gd_fordel-rakuten-edm",
+                "title": "商品 EDM 圖（五項）",
+                "title_en": "Fordel X Rakuten",
+                "description": "美的研究所x樂天 活動",
+                "year": "2020",
+                "image": "dist/assets/images/work/fordel_rakuten/thumbnail.png",
+                "webp": "dist/assets/images/webps/fordel_rakuten/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/fordel_rakuten/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/fordel_rakuten/thumbnail-mobile.webp",
+                "tags": ["Adobe Photoshop"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "素材提供 / 美的研究所",
+                    "製作 / Joy Xie"
+                ]
+            },{
+                "name": "gd_meet-hipster-app-google-play",
+                "title": "遇見。文青 APP",
+                "title_en": "MeetHipster",
+                "description": "畢業專題 Google Play 上架圖",
+                "year": "2015-2016",
+                "image": "dist/assets/images/work/meethipster/meethipster_1.png",
+                "webp": "dist/assets/images/webps/meethipster/meethipster_1.webp",
+                "image_mobile": "dist/assets/images/work/meethipster/meethipster_1.png",
+                "webp_mobile": "dist/assets/images/webps/meethipster/meethipster_1.webp",
+                "tags": ["Adobe Illustrator"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "設計製作"
+                ]
+            },{
+                "name": "gd_ntub-design",
+                "title": "NTUB 教務處學術服務組",
+                "title_en": "NTUB",
+                "description": "校刊連結 EDM 及海報",
+                "year": "2015-2016",
+                "image": "dist/assets/images/work/ntub/thumbnail.png",
+                "webp": "dist/assets/images/webps/ntub/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/ntub/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/ntub/thumbnail-mobile.webp",
+                "tags": ["Adobe Illustrator"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "設計製作"
+                ]
+            }
+        ]
+    },{
         "category": "side-projects",
         "title_en": "Side-Projects",
         "title_ch": "個人作品",
@@ -592,108 +693,6 @@
                 "github": "",
                 "info_contents": [
                     "前端製作 & 更新維護"
-                ]
-            }
-        ]
-    },{
-        "category": "web-design",
-        "title_en": "Web design",
-        "title_ch": "網頁設計作品",
-        "des": "",
-        "works": [
-            {
-                "name": "wd_purestyle-note-v1",
-                "title": "PureStyle Note",
-                "title_en": "PureStyle Note",
-                "description": "版面設計 - 採用",
-                "year": "2020",
-                "image": "dist/assets/images/work/pure_style_v1/thumbnail.png",
-                "webp": "dist/assets/images/webps/pure_style_v1/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/pure_style_v1/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/pure_style_v1/thumbnail-mobile.webp",
-                "tags": ["WordPress", "Adobe XD", "Adobe Photoshop"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "全站樣式設計"
-                ]
-            },{
-                "name": "wd_all-in-v3",
-                "title": "All-in 專業推薦 (V3)",
-                "title_en": "All-in (Version 3)",
-                "description": "版面設計 - 未採用",
-                "year": "2019",
-                "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
-                "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/all_in_v3/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/all_in_v3/thumbnail-mobile.webp",
-                "tags": ["WordPress", "Adobe XD"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "全站樣式設計"
-                ]
-            }
-        ]
-    },{
-        "category": "graphic-design",
-        "title_en": "Graphic design",
-        "title_ch": "平面設計作品",
-        "des": "",
-        "works": [
-            {
-                "name": "gd_fordel-rakuten-edm",
-                "title": "商品 EDM 圖（五項）",
-                "title_en": "Fordel X Rakuten",
-                "description": "美的研究所x樂天 活動",
-                "year": "2020",
-                "image": "dist/assets/images/work/fordel_rakuten/thumbnail.png",
-                "webp": "dist/assets/images/webps/fordel_rakuten/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/fordel_rakuten/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/fordel_rakuten/thumbnail-mobile.webp",
-                "tags": ["Adobe Photoshop"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "素材提供 / 美的研究所",
-                    "製作 / Joy Xie"
-                ]
-            },{
-                "name": "gd_meet-hipster-app-google-play",
-                "title": "遇見。文青 APP",
-                "title_en": "MeetHipster",
-                "description": "畢業專題 Google Play 上架圖",
-                "year": "2015-2016",
-                "image": "dist/assets/images/work/meethipster/meethipster_1.png",
-                "webp": "dist/assets/images/webps/meethipster/meethipster_1.webp",
-                "image_mobile": "dist/assets/images/work/meethipster/meethipster_1.png",
-                "webp_mobile": "dist/assets/images/webps/meethipster/meethipster_1.webp",
-                "tags": ["Adobe Illustrator"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "設計製作"
-                ]
-            },{
-                "name": "gd_ntub-design",
-                "title": "NTUB 教務處學術服務組",
-                "title_en": "NTUB",
-                "description": "校刊連結 EDM 及海報",
-                "year": "2015-2016",
-                "image": "dist/assets/images/work/ntub/thumbnail.png",
-                "webp": "dist/assets/images/webps/ntub/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/ntub/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/ntub/thumbnail-mobile.webp",
-                "tags": ["Adobe Illustrator"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "設計製作"
                 ]
             }
         ]
