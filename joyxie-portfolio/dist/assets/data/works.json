@@ -252,7 +252,7 @@
                 "name": "cms_all-in-v2",
                 "title": "All-in 專業推薦 (V2)",
                 "title_en": "All-in (Version 2)",
-                "description": "GA 事件 & 前端效果 & 維護",
+                "description": "前端效果、維護 & GA 事件",
                 "year": "2019-2023",
                 "image": "dist/assets/images/work/all_in_v2/thumbnail.jpg",
                 "webp": "dist/assets/images/webps/all_in_v2/thumbnail.webp",
@@ -263,21 +263,21 @@
                 "demo": "",
                 "github": "",
                 "info_contents": [
-                    "GA 事件埋設",
                     "部分前端效果與功能",
-                    "維護 & 持續調整版面"
+                    "維護 & 持續調整版面",
+                    "文章頁各按鈕的 GA 事件埋設"
                 ]
             },{
                 "name": "cms_trouble-care-v2",
-                "title": "Trouble Care 妳的煩惱顧問",
+                "title": "Trouble Care (V2)",
                 "title_en": "Trouble Care",
-                "description": "前端製作（V2） & 維護",
+                "description": "前端製作、維護 & CLS & 電子報",
                 "year": "2020-2023",
                 "image": "dist/assets/images/work/trouble_care_v2/thumbnail.png",
                 "webp": "dist/assets/images/webps/trouble_care_v2/thumbnail.webp",
                 "image_mobile": "dist/assets/images/work/trouble_care_v2/thumbnail-mobile.png",
                 "webp_mobile": "dist/assets/images/webps/trouble_care_v2/thumbnail-mobile.webp",
-                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "HTML Email"],
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "HTML Email", "CLS 改善"],
                 "link": "https://trouble-care.com/",
                 "demo": "",
                 "github": "",
@@ -285,13 +285,14 @@
                     "全站樣式製作",
                     "部分前端效果與功能",
                     "維護 & 持續調整版面",
-                    "HTML Email 電子報"
+                    "HTML Email 電子報",
+                    "CLS 問題調整"
                 ]
             },{
                 "name": "cms_purestyle-note-v1",
                 "title": "PureStyle Note",
                 "title_en": "PureStyle Note",
-                "description": "前端製作 & 維護",
+                "description": "前端製作、維護 & 電子報",
                 "year": "2020-2023",
                 "image": "dist/assets/images/work/pure_style_v1/thumbnail.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/thumbnail.webp",
@@ -361,9 +362,9 @@
                 ]
             },{
                 "name": "cms_trouble-care-v1",
-                "title": "Trouble Care 妳的煩惱顧問",
+                "title": "Trouble Care (V1)",
                 "title_en": "Trouble Care",
-                "description": "前端製作（V1）- 已撤換",
+                "description": "前端製作 - 已撤換",
                 "year": "2019",
                 "image": "dist/assets/images/work/trouble_care_v1/thumbnail.png",
                 "webp": "dist/assets/images/webps/trouble_care_v1/thumbnail.webp",
@@ -386,10 +387,27 @@
         "des": "",
         "works": [
             {
+                "name": "wd_fordel-lp",
+                "title": "美的研究所 LP 活動區塊",
+                "title_en": "Fordel Landing Page",
+                "description": "Landing Page 活動區塊",
+                "year": "2020-2021",
+                "image": "dist/assets/images/work/fordel_lp/thumbnail.png",
+                "webp": "dist/assets/images/webps/fordel_lp/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/fordel_lp/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/fordel_lp/thumbnail-mobile.webp",
+                "tags": ["Adobe Photoshop", "HTML", "CSS", "jQuery"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "Landing Page 活動區塊設計製作"
+                ]
+            },{
                 "name": "wd_purestyle-note-v1",
                 "title": "PureStyle Note",
                 "title_en": "PureStyle Note",
-                "description": "版面設計 - 採用",
+                "description": "部落格版面設計 - 採用",
                 "year": "2020",
                 "image": "dist/assets/images/work/pure_style_v1/thumbnail.png",
                 "webp": "dist/assets/images/webps/pure_style_v1/thumbnail.webp",
@@ -406,7 +424,7 @@
                 "name": "wd_all-in-v3",
                 "title": "All-in 專業推薦 (V3)",
                 "title_en": "All-in (Version 3)",
-                "description": "版面設計 - 未採用",
+                "description": "部落格版面設計 - 未採用",
                 "year": "2019",
                 "image": "dist/assets/images/work/all_in_v3/thumbnail.png",
                 "webp": "dist/assets/images/webps/all_in_v3/thumbnail.webp",
@@ -424,10 +442,28 @@
     },{
         "category": "graphic-design",
         "title_en": "Graphic design",
-        "title_ch": "平面設計作品",
+        "title_ch": "平面設計/影像處理",
         "des": "",
         "works": [
             {
+                "name": "gd_fordel-fb",
+                "title": "FB 粉專圖片仿製",
+                "title_en": "Fordel X Facebook",
+                "description": "TC、PSN、All-in",
+                "year": "2020-2021",
+                "image": "dist/assets/images/work/fordel_fb/thumbnail.png",
+                "webp": "dist/assets/images/webps/fordel_fb/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/fordel_fb/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/fordel_fb/thumbnail-mobile.webp",
+                "tags": ["Adobe Photoshop"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "素材提供 / 福得樂設計師",
+                    "製作 / Joy Xie"
+                ]
+            },{
                 "name": "gd_fordel-rakuten-edm",
                 "title": "商品 EDM 圖（五項）",
                 "title_en": "Fordel X Rakuten",
@@ -447,9 +483,9 @@
                 ]
             },{
                 "name": "gd_meet-hipster-app-google-play",
-                "title": "遇見。文青 APP",
+                "title": "Google Play 上架圖",
                 "title_en": "MeetHipster",
-                "description": "畢業專題 Google Play 上架圖",
+                "description": "畢業專題 遇見。文青 APP",
                 "year": "2015-2016",
                 "image": "dist/assets/images/work/meethipster/meethipster_1.png",
                 "webp": "dist/assets/images/webps/meethipster/meethipster_1.webp",
@@ -464,9 +500,9 @@
                 ]
             },{
                 "name": "gd_ntub-design",
-                "title": "NTUB 教務處學術服務組",
+                "title": "校刊連結 EDM 及海報",
                 "title_en": "NTUB",
-                "description": "校刊連結 EDM 及海報",
+                "description": "NTUB 教務處學術服務組",
                 "year": "2015-2016",
                 "image": "dist/assets/images/work/ntub/thumbnail.png",
                 "webp": "dist/assets/images/webps/ntub/thumbnail.webp",
