@@ -59,8 +59,8 @@
                 "info_contents": [
                     "全站共用樣式 & 元件",
                     "Navigation、Footer", 
-                    "前端切版：除了 ABOUT 頁面",
-                    "串接 JSON 資料，顯示資料於畫面"
+                    "前端切版：所有頁面（排除 ABOUT 頁）",
+                    "自建 JSON 資料，透過 Vue.js 顯示於畫面"
                 ]
             },{
                 "name": "fem_surpriselab",
@@ -97,7 +97,7 @@
                 "github": "",
                 "info_contents": [
                     "前端切版",
-                    "串接 JSON 資料，顯示資料於畫面"
+                    "自建 JSON 資料，透過 Vue.js 顯示於畫面"
                 ]
             },{
                 "name": "fem_telephonebooth",

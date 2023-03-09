@@ -15,6 +15,15 @@
         <ul>
             <li><a href="https://andmakers.tuesdemo.huhu.tw/components.html" target="_blank">https://andmakers.tuesdemo.huhu.tw/components.html</a></li>
         </ul>
+
+        <h4>JSON 資料</h4>
+        <ul>
+           <li>catalog.json</li>
+           <li>faqs.json</li>
+           <li>faqs-featured.json</li>
+           <li>partner.json</li>
+           <li>review.json</li> 
+        </ul>
         
         <h4>Button</h4>
         <ul>
@@ -142,9 +151,9 @@
         <h4>Home</h4>
 
         <p>Vue.js 串接資料區塊：</p>
-        <ul class="block-wrap">
-            <li>Our Retail Partners</li>
-            <li>Frequently Asked Questions</li>
+        <ul>
+            <li>Our Retail Partners: <span class="inline-wrap">partner.json</span></li>
+            <li>Frequently Asked Questions: <span class="inline-wrap">faqs-featured.json</span></li>
         </ul>
 
         <div class="device-wrap pc-dev-wrap" style="--device-w:1440; --device-h:780;">
@@ -205,9 +214,9 @@
         <h4>Catalog</h4>
 
         <p>Vue.js 串接資料區塊：</p>
-        <ul class="block-wrap">
-            <li>Product Categories & Product Modal</li>
-            <li>High-Quality, Top-Selling Products & Review Modal</li>
+        <ul>
+            <li>Product Categories & Product Modal: <span class="inline-wrap">catalog.json</span></li>
+            <li>High-Quality, Top-Selling Products & Review Modal: <span class="inline-wrap">review.json</span></li>
         </ul>
 
         <div class="device-wrap pc-dev-wrap" style="--device-w:1440; --device-h:780;">
@@ -225,7 +234,7 @@
 
         <p>Vue.js 串接資料區塊：</p>
         <div class="block-wrap">
-            依照點擊的 Product id，動態抽換對應的商品資料至 Modal 中。
+            依照點擊的 <span class="inline-wrap">Product id</span>，動態抽換對應的商品資料至 Modal 中。
         </div>
 
         <div class="device-wrap pc-dev-wrap" style="--device-w:1440; --device-h:780;">
@@ -243,7 +252,7 @@
 
         <p>Vue.js 串接資料區塊：</p>
         <div class="block-wrap">
-            依照點擊的 Review id，動態抽換對應的商品資料至 Modal 中。
+            依照點擊的 <span class="inline-wrap">Review id</span>，動態抽換對應的商品資料至 Modal 中。
         </div>
 
         <div class="device-wrap pc-dev-wrap" style="--device-w:1440; --device-h:780;">
@@ -277,11 +286,7 @@
 
         <h4>FAQs</h4>
 
-        <p>Vue.js 串接資料區塊：</p>
-        <ul class="block-wrap">
-            <li>Suppliers</li>
-            <li>Retailers</li>
-        </ul>
+        <p>Vue.js 串接資料區塊：<span class="inline-wrap">faqs.json</span></p>
 
         <div class="device-wrap pc-dev-wrap" style="--device-w:1440; --device-h:780;">
             <div class="dev-outter-wrap">
