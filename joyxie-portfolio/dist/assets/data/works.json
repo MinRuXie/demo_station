@@ -249,6 +249,26 @@
         "des": "",
         "works": [
             {
+                "name": "cms_ads",
+                "title": "All-in、TC、PSN",
+                "title_en": "Ads Banner",
+                "description": "客製廣告Banner、推薦文章版位",
+                "year": "2020-2022",
+                "image": "dist/assets/images/work/fordel_ads/thumbnail.png",
+                "webp": "dist/assets/images/webps/fordel_ads/thumbnail.webp",
+                "image_mobile": "dist/assets/images/work/fordel_ads/thumbnail-mobile.png",
+                "webp_mobile": "dist/assets/images/webps/fordel_ads/thumbnail-mobile.webp",
+                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "jQuery", "PHP"],
+                "link": "",
+                "demo": "",
+                "github": "",
+                "info_contents": [
+                    "三得利 Banner 版位",
+                    "勾勾迪 Banner 版位",
+                    "手機版置底 Banner 版位",
+                    "推薦文章版位"
+                ]
+            },{
                 "name": "cms_all-in-v2",
                 "title": "All-in 專業推薦 (V2)",
                 "title_en": "All-in (Version 2)",
