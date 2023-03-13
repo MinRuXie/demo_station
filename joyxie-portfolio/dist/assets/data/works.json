@@ -249,26 +249,6 @@
         "des": "",
         "works": [
             {
-                "name": "cms_ads",
-                "title": "All-in、TC、PSN",
-                "title_en": "Ads Banner",
-                "description": "客製廣告Banner、推薦文章版位",
-                "year": "2020-2022",
-                "image": "dist/assets/images/work/fordel_ads/thumbnail.png",
-                "webp": "dist/assets/images/webps/fordel_ads/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/fordel_ads/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/fordel_ads/thumbnail-mobile.webp",
-                "tags": ["WordPress", "HTML", "CSS", "JavaScript", "jQuery", "PHP"],
-                "link": "",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "三得利 Banner 版位",
-                    "勾勾迪 Banner 版位",
-                    "手機版置底 Banner 版位",
-                    "推薦文章版位"
-                ]
-            },{
                 "name": "cms_all-in-v2",
                 "title": "All-in 專業推薦 (V2)",
                 "title_en": "All-in (Version 2)",
@@ -487,12 +467,12 @@
                 "name": "gd_fordel-rakuten-edm",
                 "title": "商品 EDM 圖（五項）",
                 "title_en": "Fordel X Rakuten",
-                "description": "美的研究所x樂天 活動",
+                "description": "美的研究所x樂天市場 點數活動",
                 "year": "2020",
-                "image": "dist/assets/images/work/fordel_rakuten/thumbnail.png",
-                "webp": "dist/assets/images/webps/fordel_rakuten/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/fordel_rakuten/thumbnail-mobile.png",
-                "webp_mobile": "dist/assets/images/webps/fordel_rakuten/thumbnail-mobile.webp",
+                "image": "dist/assets/images/work/fordel_rakuten/thumbnail-2.png",
+                "webp": "dist/assets/images/webps/fordel_rakuten/thumbnail-2.webp",
+                "image_mobile": "dist/assets/images/work/fordel_rakuten/thumbnail-mobile-2.png",
+                "webp_mobile": "dist/assets/images/webps/fordel_rakuten/thumbnail-mobile-2.webp",
                 "tags": ["Adobe Photoshop"],
                 "link": "",
                 "demo": "",
@@ -639,55 +619,17 @@
                     "前端製作"
                 ]
             },{
-                "name": "sp_guitar-tab-translator-v2",
-                "title": "吉他 TAB 譜翻譯機 V2",
-                "title_en": "GuitarTABTranslator V2",
-                "description": "吉他 TAB 譜 → 數字簡譜",
-                "year": "2020",
-                "image": "dist/assets/images/work/guitar_tab_translator_v2/thumbnail.png",
-                "webp": "dist/assets/images/webps/guitar_tab_translator_v2/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/guitar_tab_translator_v2/thumbnail.png",
-                "webp_mobile": "dist/assets/images/webps/guitar_tab_translator_v2/thumbnail.webp",
-                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
-                "link": "https://minruxie.github.io/demo_station/GuitarNotationTool_2",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "功能發想",
-                    "介面設計",
-                    "前端製作"
-                ]
-            },{
-                "name": "sp_guitar-tab-translator-v1",
-                "title": "吉他 TAB 譜翻譯機 V1",
-                "title_en": "GuitarTABTranslator V1",
-                "description": "吉他 TAB 譜 → 數字簡譜",
+                "name": "sp_guitar-convert",
+                "title": "吉他 TAB & 簡譜 轉換",
+                "title_en": "GuitarConvert",
+                "description": "吉他 TAB 譜 ←→ 數字簡譜",
                 "year": "2020-2021",
                 "image": "dist/assets/images/work/guitar_tab_translator_v1/thumbnail.png",
                 "webp": "dist/assets/images/webps/guitar_tab_translator_v1/thumbnail.webp",
                 "image_mobile": "dist/assets/images/work/guitar_tab_translator_v1/thumbnail.png",
                 "webp_mobile": "dist/assets/images/webps/guitar_tab_translator_v1/thumbnail.webp",
                 "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
-                "link": "https://minruxie.github.io/demo_station/GuitarNotationTool",
-                "demo": "",
-                "github": "",
-                "info_contents": [
-                    "功能發想",
-                    "介面設計",
-                    "前端製作"
-                ]
-            },{
-                "name": "sp_guitar-tab-generator",
-                "title": "吉他 TAB 譜產生器",
-                "title_en": "GuitarTABGenerator",
-                "description": "數字簡譜 → 吉他 TAB 譜",
-                "year": "2020-2021",
-                "image": "dist/assets/images/work/guitar_tab_generator/thumbnail.png",
-                "webp": "dist/assets/images/webps/guitar_tab_generator/thumbnail.webp",
-                "image_mobile": "dist/assets/images/work/guitar_tab_generator/thumbnail.png",
-                "webp_mobile": "dist/assets/images/webps/guitar_tab_generator/thumbnail.webp",
-                "tags": ["HTML", "SCSS", "JavaScript", "jQuery"],
-                "link": "https://minruxie.github.io/demo_station/GuitarTABTool",
+                "link": "",
                 "demo": "",
                 "github": "",
                 "info_contents": [
