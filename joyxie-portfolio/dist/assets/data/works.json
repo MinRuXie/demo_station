@@ -17,7 +17,7 @@
                 "webp_mobile": "dist/assets/images/webps/sunset_terminal/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "https://www.surpriselab.com.tw/terminal",
-                "demo": "https://terminal.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/01_terminal/",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
@@ -37,7 +37,7 @@
                 "webp_mobile": "dist/assets/images/webps/dining_in_the_dark_3/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3"],
                 "link": "https://www.surpriselab.com.tw/dininginthedark3/index.html",
-                "demo": "",
+                "demo": "https://minruxie.github.io/temp_demo/02_dark3/",
                 "github": "",
                 "info_contents": [
                     "起始畫面：轉盤"
@@ -54,7 +54,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmakers/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5", "Vue.js 2", "Owl Carousel 2"],
                 "link": "https://andmakers.co/",
-                "demo": "https://andmakers.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/03_andmakers2.0/",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
@@ -74,7 +74,7 @@
                 "webp_mobile": "dist/assets/images/webps/surpriselab/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5", "Owl Carousel 2"],
                 "link": "",
-                "demo": "https://surpriselab.tuesdemo.huhu.tw/tw/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
@@ -93,7 +93,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmakers_retailer/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5", "Vue.js 2"],
                 "link": "",
-                "demo": "https://retailers.tuesdemo.huhu.tw/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "前端切版",
@@ -111,7 +111,7 @@
                 "webp_mobile": "dist/assets/images/webps/telephonebooth/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "http://telephonebooth.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/06_telephonebooth/",
                 "github": "",
                 "info_contents": [
                     "前端切版",
@@ -130,7 +130,7 @@
                 "webp_mobile": "dist/assets/images/webps/auto_group_commerce/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "http://www.autogroupcommerce.com/",
-                "demo": "",
+                "demo": "https://minruxie.github.io/temp_demo/07_auto-group-commerce/",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -147,7 +147,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmaker_india_vendor/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "https://brands.in.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/08_andmakers-vendor-fb-campaign/",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -164,7 +164,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmaker_vendor/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "https://brands.tuesdemo.huhu.tw/index-a.html",
+                "demo": "https://minruxie.github.io/temp_demo/09_andmakers-vendor/index-a.html",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -181,7 +181,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmaker_webinar/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "http://webinar.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/10_andmakers-webinar/",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -198,7 +198,7 @@
                 "webp_mobile": "dist/assets/images/webps/whee/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "http://whee.com.tw/",
-                "demo": "",
+                "demo": "https://minruxie.github.io/temp_demo/12_whee/",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式",
@@ -218,7 +218,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmker_ebook/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "https://start-ecommerce.andmakers.co/",
-                "demo": "",
+                "demo": "https://minruxie.github.io/temp_demo/11_andmakers-ebook-landing/",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -235,7 +235,7 @@
                 "webp_mobile": "dist/assets/images/webps/cenports_ad/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "http://fulfillment.tuesdemo.huhu.tw/",
+                "demo": "https://minruxie.github.io/temp_demo/13_cenports-fulfillment/",
                 "github": "",
                 "info_contents": [
                     "前端切版"
