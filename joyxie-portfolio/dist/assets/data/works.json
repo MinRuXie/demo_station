@@ -93,7 +93,7 @@
                 "webp_mobile": "dist/assets/images/webps/andmakers_retailer/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5", "Vue.js 2"],
                 "link": "",
-                "demo": "",
+                "demo": "https://minruxie.github.io/temp_demo/05-2_andmakers-retailer/",
                 "github": "",
                 "info_contents": [
                     "前端切版",
