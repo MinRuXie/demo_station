@@ -17,7 +17,7 @@
                 "webp_mobile": "dist/assets/images/webps/sunset_terminal/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "https://www.surpriselab.com.tw/terminal",
-                "demo": "https://minruxie.github.io/temp_demo/01_terminal/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式 & 元件",
@@ -37,7 +37,7 @@
                 "webp_mobile": "dist/assets/images/webps/dining_in_the_dark_3/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3"],
                 "link": "https://www.surpriselab.com.tw/dininginthedark3/index.html",
-                "demo": "https://minruxie.github.io/temp_demo/02_dark3/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "起始畫面：轉盤"
@@ -111,7 +111,7 @@
                 "webp_mobile": "dist/assets/images/webps/telephonebooth/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "",
-                "demo": "https://minruxie.github.io/temp_demo/06_telephonebooth/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "前端切版",
@@ -130,7 +130,7 @@
                 "webp_mobile": "dist/assets/images/webps/auto_group_commerce/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "http://www.autogroupcommerce.com/",
-                "demo": "https://minruxie.github.io/temp_demo/07_auto-group-commerce/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "前端切版"
@@ -198,7 +198,7 @@
                 "webp_mobile": "dist/assets/images/webps/whee/thumbnail-mobile.webp",
                 "tags": ["HTML5", "SCSS", "JavaScript", "jQuery 3", "Bootstrap 5"],
                 "link": "http://whee.com.tw/",
-                "demo": "https://minruxie.github.io/temp_demo/12_whee/",
+                "demo": "",
                 "github": "",
                 "info_contents": [
                     "全站共用樣式",
