@@ -12,4 +12,3 @@
 * 吉他簡譜轉TAB譜：https://minruxie.github.io/demo_station/GuitarTABTool
 * 吉他TAB譜轉簡譜_V1：https://minruxie.github.io/demo_station/GuitarNotationTool
 * 吉他TAB譜轉簡譜_V2：https://minruxie.github.io/demo_station/GuitarNotationTool_2
-* 作品集網站：https://minruxie.github.io/demo_station/joyxie-portfolio
