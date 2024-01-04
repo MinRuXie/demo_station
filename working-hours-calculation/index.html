@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工時計算機-Vue版</title>
+
+    <!-- Google Fonts Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="dist/assets/css/plugins/bootstrap.min.css">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+</head>
+<body>
+    
+    <main id="app">
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="container-inner">
+
+                            <!-- 計時器 -->
+                            <div id="js-timer" class="timer-wrap">
+                                <span class="timer-text">{{ timer_text }}</span>
+                            </div>
+
+                            <button :data-type="timer_btn_type" @click="workRecord()">{{ timer_btn_text }}</button>
+
+                            <button @click="copyTableData()" class="icon-btn copy"></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="container-inner">
+
+                            <fieldset>
+                                <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic">
+                                <label for="chk-hour">時數>=0.01無條件進位為0.25的倍數</label>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-inner">
+
+                            <!-- 表格 -->
+                            <div class="table-wrap">
+                                <!-- 表格標題 -->
+                                <table class="table-header table table-hover" width="100%">
+                                    <thead>
+                                        <!-- <th>#</th> -->
+                                        <th>日期</th>
+                                        <th>時段</th>
+                                        <th>時數</th>
+                                        <th>備註</th>
+                                        <th>操作</th>
+                                    </thead>
+                                </table>
+                                <!-- 表格內容 (供複製) -->
+                                <table class="table-body table table-hover" ref="recordTable" width="100%">
+                                    <tbody>
+
+                                        <tr v-for="(item, index) of record_arr" :key="index">
+                                            <!-- <td>{{ index }}</td> -->
+                                            
+                                            <!-- 日期 -->
+                                            <td>{{ formatTableData(item).data_d }}</td>
+
+                                            <!-- 時段 -->
+                                            <td>{{ formatTableData(item).data_s }}~{{ formatTableData(item).data_e }}</td>
+
+                                            <!-- 時數 -->
+                                            <td>
+                                                <!-- 無條件進位值 -->
+                                                <span v-if="hours_magic">{{ formatTableData(item).data_m_hs }}</span>
+
+                                                <!-- 原始值 -->
+                                                <span v-if="!hours_magic">{{ formatTableData(item).data_o_hs }}</span>
+                                            </td>
+
+                                            <!-- 備註 -->
+                                            <td>
+                                                <!-- 顯示文字 -->
+                                                <span v-if="!item.comment_editable"  class="comment-text">{{ item.r_comment }}</span>
+                                                
+                                                <!-- 輸入框 -->
+                                                <input v-if="item.comment_editable" ref="c-input" type="text" v-model="item.r_comment" @blur="enableComment(item.r_id, false)">
+                                            </td>
+
+                                            <!-- 操作 -->
+                                            <td>
+                                                <!-- 編輯備註 -->
+                                                <button @click="enableComment(item.r_id, true)" class="icon-btn edit"></button>
+
+                                                <!-- 刪除紀錄 -->
+                                                <button @click="removeRecord(item.r_id)" :disabled="item.del_btn_enable" class="icon-btn del"></button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- bootstrap -->
+    <script src="dist/assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- vue.js v2.6.10 -->
+    <script src="dist/assets/js/plugins/vue.min.js"></script>
+
+    <!-- custom -->
+    <script src="dist/assets/js/bundle.js"></script>
+</body>
+</html>
