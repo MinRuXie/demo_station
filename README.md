@@ -4,6 +4,7 @@
 ## 目錄
 * 阿奈玩具：https://minruxie.github.io/demo_station/kana_toy
 * 工時計算機：https://minruxie.github.io/demo_station/working-hours-calculation
+* 測試版-工時計算機：https://minruxie.github.io/demo_station/test-working-hours-calculation
 * 勞務報酬計算機：https://minruxie.github.io/demo_station/quote-calculation
 * 鋼琴簡譜工具：https://minruxie.github.io/demo_station/PianoNotationConversionTool
 * 翻翻牌對對碰遊戲：https://minruxie.github.io/demo_station/flipping_images
