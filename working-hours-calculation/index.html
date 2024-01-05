@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>工時計算機-Vue版</title>
+    <title>工時計算機</title>
 
     <!-- Google Fonts Material Symbols -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="dist/assets/css/plugins/bootstrap.min.css">
@@ -19,29 +24,30 @@
     
     <main id="app">
 
+        <div v-if="showCopyed" class="copyed-msg">已複製到剪貼簿</div>
+
         <section>
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="container-inner">
+                    <div class="col-12">
+                        <div class="upper-inner">
 
                             <!-- 計時器 -->
                             <div id="js-timer" class="timer-wrap">
                                 <span class="timer-text">{{ timer_text }}</span>
                             </div>
 
-                            <button :data-type="timer_btn_type" @click="workRecord()">{{ timer_btn_text }}</button>
+                            <div class="btn-wrap">
+                                <!-- 計時按鈕 -->
+                                <button :data-type="timer_btn_type" @click="workRecord()" class="text-btn">{{ timer_btn_text }}</button>
 
-                            <button @click="copyTableData()" class="icon-btn copy"></button>
+                                <!-- 複製按鈕 -->
+                                <button @click="copyTableData()" class="icon-btn copy" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="複製表格到剪貼簿"></button>
+                            </div>
 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="container-inner">
-
-                            <fieldset>
-                                <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic">
+                            <fieldset class="form-group">
+                                <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic" placeholder="請輸入備註">
                                 <label for="chk-hour">時數>=0.01無條件進位為0.25的倍數</label>
                             </fieldset>
 
@@ -128,7 +134,8 @@
 
 
     <!-- bootstrap -->
-    <script src="dist/assets/js/plugins/bootstrap.min.js"></script>
+    <!-- <script src="dist/assets/js/plugins/bootstrap.min.js"></script> -->
+    <script src="dist/assets/js/plugins/bootstrap.bundle.min.js"></script>
 
     <!-- vue.js v2.6.10 -->
     <script src="dist/assets/js/plugins/vue.min.js"></script>
