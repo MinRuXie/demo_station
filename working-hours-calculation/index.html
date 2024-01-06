@@ -46,12 +46,12 @@
                                 <button :data-type="timer_btn_type" @click="workRecord()" class="text-btn">{{ timer_btn_text }}</button>
 
                                 <!-- 複製按鈕 -->
-                                <button @click="copyTableData()" class="icon-btn copy" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="複製表格到剪貼簿"></button>
+                                <button @click="copyTableData()" class="icon-btn copy-all" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="複製表格到剪貼簿"></button>
                             </div>
 
                             <fieldset class="form-group">
                                 <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic" placeholder="請輸入備註">
-                                <label for="chk-hour" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="與0.25倍數誤差10分鐘內">時數無條件進位魔法</label>
+                                <label for="chk-hour">時數進位為0.25的倍數 (灌水10分鐘以內)</label>
                             </fieldset>
 
                         </div>
@@ -117,6 +117,9 @@
 
                                                 <!-- 刪除紀錄 -->
                                                 <button @click="removeRecord(item.r_id)" :disabled="item.del_btn_enable" class="icon-btn del"></button>
+
+                                                <!-- 複製按鈕 -->
+                                                <button @click="copyTrData($event)" class="icon-btn copy"></button>
                                             </td>
                                         </tr>
 
