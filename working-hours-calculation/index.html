@@ -49,10 +49,22 @@
                                 <button @click="copyTableData()" class="icon-btn copy-all" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="複製表格到剪貼簿"></button>
                             </div>
 
-                            <fieldset class="form-group">
-                                <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic" placeholder="請輸入備註">
-                                <label for="chk-hour">時數進位為0.25的倍數 (灌水10分鐘以內)</label>
-                            </fieldset>
+                            <div class="group-wrap">
+                                <fieldset class="form-group">
+                                    <input type="checkbox" name="chk-alert-sound" id="chk-alert-sound" v-model="alert_sound" @change="controlPlayer()">
+                                    <label for="chk-alert-sound">布穀提示音 (整點播放)</label>
+                                    
+                                    <!-- audio -->
+                                    <audio preload="auto" ref="alertPlayer" class="audio-player">
+                                        <source src="dist/assets/audio/cuckoo-clock-trimmed.mp3" type="audio/mpeg">
+                                    </audio>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <input type="checkbox" name="chk-hour" id="chk-hour" v-model="hours_magic">
+                                    <label for="chk-hour">時數進位為0.25的倍數 (灌水10分鐘以內)</label>
+                                </fieldset>
+                            </div>
 
                         </div>
                     </div>
