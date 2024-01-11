@@ -53,6 +53,7 @@
                                 <fieldset class="form-group">
                                     <input type="checkbox" name="chk-alert-sound" id="chk-alert-sound" v-model="alert_sound" @change="controlPlayer()">
                                     <label for="chk-alert-sound">布穀提示音 (每小時播放)</label>
+                                    <button @click="playSound()" class="icon-btn play" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="right" title="試聽"></button>
                                     
                                     <!-- audio -->
                                     <audio preload="auto" ref="alertPlayer" class="audio-player">
