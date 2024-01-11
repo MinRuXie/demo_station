@@ -4,49 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>時區對照表</title>
+    <title>時區對照表-vue</title>
     <link rel="icon" href="dist/assets/images/moon.svg" type="image/x-icon">
 
     <!-- Plugin -->
     <link href="dist/assets/css/plugins/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom -->
-    <link href="dist/assets/css/style.css" rel="stylesheet">
+    <link href="dist/assets/css/style-vue.css" rel="stylesheet">
 </head>
 <body>
-    <section id="add" class="add-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    你要監控誰？<input id="member_name" type="text">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    他人在哪兒？<select id="member_location" name="YourLocation"></select>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-                    <button id="add-btn">新增成員</button>
-                </div>
-            </div>
-        </div>
-    </section>
     
-    <section id="main" class="main-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-3">
-                    目前時間<button id="refresh-btn">刷新時間</button>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-9 col-9">時區對照</div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-1 d-none d-md-block">地區/城市/GMT</div>
-                <div class="col-lg-2 col-md-2 co2-sm-2 col-2 d-none d-md-block">時區</div>
-            </div>
-        </div>
-    </section>
+    <main id="app">
+
+        <section class="header-wrap">
+
+            <form>
+                <fieldset>
+                    <label for="person-name">姓名</label>
+                    <input type="text" id="person-name" v-model="form_name">
+                </fieldset>
+    
+                <fieldset>
+                    <label for="person-timezone">位置</label>
+                    <select name="person-timezone" id="person-timezone" v-model="form_timezone">
+                        <option value="">請選擇選項</option>
+                        <optgroup v-for="(item, i) of aryIannaTimeZones" :label="item.continent" :key="i">
+                            <option v-for="(place, j) of item.region" :value="item.continent + '/' +  place" :key="i+j">{{ place }}</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+    
+                <button type="button" @click="addPerson()">新增成員</button>
+            </form>
+
+        </section>
+
+        <section class="main-wrap">
+
+            <table class="table table-wrap">
+                <thead>
+                    <tr>
+                        <td>目前時間</td>
+                        <td>時區對照</td>
+                        <td>地區/城市/GMT</td>
+                        <td>時區</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(item, index) of current_list">
+
+                        <!-- 目前時間 -->
+                        <td>
+                            {{ item.person_name }}<br>
+                            <span class="time">{{ item.cur_hour }}</span><br>
+                            {{ item.cur_date }}
+                        </td>
+
+                        <!-- 時區對照 -->
+                        <td>
+                            <div class="hour-wrap">
+                                <span v-for="(h, index) of item.hour_show" 
+                                      :data-hour="h"
+                                      class="hour"
+                                      :class="{ 
+                                        'sel': hover_index === index,
+                                        'cur': h == item.cur_time
+                                      }"
+                                      @mouseover="hover_index=index" @mouseleave="hover_index=false"
+                                >{{ h }}</span>
+                            </div>
+                        </td>
+
+                        <!-- 地區/城市/GMT -->
+                        <td>
+                            {{ item.person_location }}<br>
+                            {{ item.gmt }}
+                        </td>
+
+                        <!-- 時區 -->
+                        <td>
+                            {{ item.gmt_ch }}<br>
+                            {{ item.gmt_en }}
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
     
 
     <!-- Plugins -->
-    <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
-    <script src="dist/assets/js/plugins/bootstrap.min.js"></script>
+    <!-- <script src="dist/assets/js/plugins/bootstrap.min.js"></script> -->
+    <script src="dist/assets/js/plugins/vue.min.js"></script>
 
     <!-- Custom -->
     <script src="dist/assets/js/bundle.js"></script>
