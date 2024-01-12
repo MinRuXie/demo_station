@@ -6,7 +6,7 @@
 ### 工具
 * 工時計算機：https://minruxie.github.io/demo_station/working-hours-calculation
 * 勞務報酬計算機：https://minruxie.github.io/demo_station/quote-calculation
-* 時區對照表：https://minruxie.github.io/demo_station/time_zone
+* 時區對照表V2：https://minruxie.github.io/demo_station/time_zone
 * 4x4產生器：https://minruxie.github.io/demo_station/grider
 * 手機漫畫閱讀器：https://minruxie.github.io/demo_station/comicReader
 
