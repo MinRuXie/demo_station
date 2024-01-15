@@ -59,7 +59,12 @@
                             {{ item.person_name }}<br>
                             <span class="time">{{ item.cur_hour }}</span><br>
                             {{ item.cur_date }} {{ item.cur_week }}<br>
-                            <button @click="delPerson(index)">刪除</button>
+
+                            <div class="btn-wrap">
+                                <button @click="sortPerson(index, 'up')">上移</button>
+                                <button @click="sortPerson(index, 'down')">下移</button>
+                                <button @click="delPerson(index)">刪除</button>
+                            </div>
                         </td>
 
                         <!-- 時區對照 -->
