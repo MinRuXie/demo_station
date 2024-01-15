@@ -1,12 +1,9 @@
-[
-    {
-        "name": "我們",
-        "timezone": "Asia/Taipei"
-    },{
-        "name": "山姆",
-        "timezone": "America/Los_Angeles"
-    },{
-        "name": "鳥哥",
-        "timezone": "Australia/Adelaide"
-    }
-]
+{
+    "persons": 
+        [
+            {
+                "name": "我們",
+                "timezone": "Asia/Taipei"
+            }
+        ]
+}
