@@ -59,7 +59,7 @@
                             {{ item.person_name }}<br>
                             <span class="time">{{ item.cur_hour }}</span><br>
                             {{ item.cur_date }} {{ item.cur_week }}<br>
-                            <button @click="delPerson(item.id)">刪除</button>
+                            <button @click="delPerson(index)">刪除</button>
                         </td>
 
                         <!-- 時區對照 -->
