@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國高中單字字典</title>
+
+    <!-- bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="dist/assets/css/plugins/bootstrap.min.css">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+</head>
+<body>
+
+    <main id="app">
+
+        
+        <section class="sticky-section">
+
+            <form>
+                <h3>國中1200+高中7000單字字典</h3>
+
+                <!-- 搜尋 -->
+                <div class="group-wrap">
+                    <fieldset class="form-group">
+                        <label for="input-search">關鍵字</label>
+                        <input type="text" placeholder="請輸入關鍵字" id="input-search" v-model="form.data_search">
+                    </fieldset>
+                    <button type="button" @click="searchWord()">搜尋</button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <table class="table caption-top table-wrap">
+                <caption>單字表 (顯示 {{result_count}} 筆資料)</caption>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>單字</td>
+                        <td>描述</td>
+                        <td>詞性</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template v-for="(item, index) of word_list" :key="index">
+                        <tr v-if="item.status_show">
+                            <td>{{ index + 1 }}</td>
+                            <td>
+                                <template v-if="!item.status_edit">{{ item.data_word }}</template>
+                                <input type="text" v-if="item.status_edit" v-model="item.temp_word">
+                            </td>
+    
+                            <td>
+                                <template v-if="!item.status_edit">{{ item.data_mean }}</template>
+                                <input type="text" v-if="item.status_edit" v-model="item.temp_mean">
+                            </td>
+    
+                            <td>
+                                <template v-if="!item.status_edit">{{ item.data_type }}</template>
+                                <input type="text" v-if="item.status_edit" v-model="item.temp_type">
+                            </td>
+    
+                            <td>
+                                <button v-if="!item.status_edit" @click="editWord(index, 'edit')">編輯</button>
+                                <template v-if="item.status_edit">
+                                    <button @click="editWord(index, 'save')">儲存</button>
+                                    <button @click="editWord(index, 'cancel')">取消</button>
+                                </template>
+    
+                                <button @click="delWord(index)">刪除</button>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <section class="fixed-section">
+            <form>
+
+                <!-- 新增 -->
+                <div class="group-wrap">
+                    <fieldset class="form-group">
+                        <label for="input-word">單字*</label>
+                        <input type="text" placeholder="請輸入單字" id="input-word" v-model="form.data_word">
+                    </fieldset>
+    
+                    <fieldset class="form-group">
+                        <label for="input-mean">描述*</label>
+                        <input type="text" placeholder="請輸入描述" id="input-mean" v-model="form.data_mean">
+                    </fieldset>
+    
+                    <fieldset class="form-group">
+                        <label for="input-type">類型</label>
+                        <input type="text" placeholder="請輸入詞性之類的..." id="input-type" v-model="form.data_type">
+                    </fieldset>
+    
+                    <button type="button" @click="addWord()">新增</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- bootstrap 5.1.3 -->
+    <script src="dist/assets/js/plugins/bootstrap.bundle.min.js"></script>
+
+    <!-- vue 2.6.10 -->
+    <script src="dist/assets/js/plugins/vue.min.js"></script>
+
+    <!-- papaparse 5.0.2: 解析 csv 檔案 -->
+    <script src="dist/assets/js/plugins/papaparse.min.js"></script>
+
+    <!-- custom -->
+    <script src="dist/assets/js/bundle.js"></script>
+</body>
+</html>

@@ -4,6 +4,7 @@
 ## 目錄
 
 ### 工具
+* 英文單字字典：https://minruxie.github.io/demo_station/word-dictionary
 * 工時計算機：https://minruxie.github.io/demo_station/working-hours-calculation
 * 勞務報酬計算機：https://minruxie.github.io/demo_station/quote-calculation
 * 時區對照表V2：https://minruxie.github.io/demo_station/time_zone
