@@ -36,15 +36,15 @@
         </section>
 
 
-        <section>
+        <section class="body-section">
 
             <table class="table caption-top table-wrap">
-                <caption>單字表 (顯示 {{result_count}} 筆資料)</caption>
+                <caption>單字表 (顯示 {{ search_result_count }} 筆 / 共 {{ word_list.length }} 筆)</caption>
                 <thead>
                     <tr>
                         <td>#</td>
                         <td>單字</td>
-                        <td>描述</td>
+                        <td>描述 (以；分隔)</td>
                         <td>詞性</td>
                         <td>操作</td>
                     </tr>
@@ -59,7 +59,7 @@
                             </td>
     
                             <td>
-                                <template v-if="!item.status_edit">{{ item.data_mean }}</template>
+                                <template v-if="!item.status_edit">{{ item.data_mean.join('；') }}</template>
                                 <input type="text" v-if="item.status_edit" v-model="item.temp_mean">
                             </td>
     
@@ -91,12 +91,12 @@
                 <!-- 新增 -->
                 <div class="group-wrap">
                     <fieldset class="form-group">
-                        <label for="input-word">單字*</label>
+                        <label for="input-word">*單字</label>
                         <input type="text" placeholder="請輸入單字" id="input-word" v-model="form.data_word">
                     </fieldset>
     
                     <fieldset class="form-group">
-                        <label for="input-mean">描述*</label>
+                        <label for="input-mean">*描述 (多字義以；分隔)</label>
                         <input type="text" placeholder="請輸入描述" id="input-mean" v-model="form.data_mean">
                     </fieldset>
     
