@@ -51,6 +51,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr v-if="search_result_count == 0">
+                        <td colspan="6">找不到搜尋結果</td>
+                    </tr>
+
                     <template v-for="(item, index) of word_list" :key="index">
                         <tr v-if="item.status_show">
                             <td>{{ index + 1 }}</td>
