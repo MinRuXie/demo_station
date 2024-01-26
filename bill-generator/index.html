@@ -37,13 +37,15 @@
                     <!-- Header -->
                     <nav class="paper-header">
                         <div class="header-left">
-                            <h2 class="page-title">
-                                <span class="title-en">INVOICE</span>
-                                <span class="title-ch">電子帳單</span>
-                            </h2>
+                            <div class="page-title">
+                                <div class="title-image">
+                                    <img src="dist/assets/images/Invoice.png" alt="Invoice">
+                                </div>
+                                <h2 class="title-text">電子帳單</h2>
+                            </div>
                         </div>
                         <div class="header-right">
-                            <div class="logo-wrap">
+                            <div class="logo-image">
                                 <img src="dist/assets/images/logo.png" alt="logo">
                             </div>
                         </div>
@@ -52,24 +54,24 @@
                     <!-- Info -->
                     <div class="paper-detail">
                         <div class="detail-payer">
-                            <p class="detail-title">{{ payer.ch_name }} {{ payer.en_name }}</p>
-                            <p class="detail-subtitle text-gray">{{ payer.address }}<br>{{ payer.address2 }}</p>
-                            <p class="detail-subtitle text-gray">{{ payer.phone }}</p>
-                            <p class="detail-subtitle text-gray">{{ payer.email }}</p>
+                            <p class="primary-detail">{{ payer.ch_name }} {{ payer.en_name }}</p>
+                            <p class="secondary-detail">{{ payer.address }}<br>{{ payer.address2 }}</p>
+                            <p class="secondary-detail">{{ payer.phone }}</p>
+                            <p class="secondary-detail">{{ payer.email }}</p>
                         </div>
                         <div class="detail-payee">
-                            <p class="detail-title">{{ payee.ch_name }} {{ payee.en_name }}</p>
-                            <p class="detail-subtitle text-gray">{{ payee.address }}<br>{{ payee.address2 }}</p>
-                            <p class="detail-subtitle text-gray">{{ payee.phone }}</p>
-                            <p class="detail-subtitle text-gray">{{ payee.email }}</p>
+                            <p class="primary-detail">{{ payee.ch_name }} {{ payee.en_name }}</p>
+                            <p class="secondary-detail">{{ payee.address }}<br>{{ payee.address2 }}</p>
+                            <p class="secondary-detail">{{ payee.phone }}</p>
+                            <p class="secondary-detail">{{ payee.email }}</p>
                         </div>
                     </div>
                     
                     <!-- Body -->
                     <div class="paper-body">
-                        <div class="invoice-table-caption">
-                            <p class="detail-title">Invoice #{{ invoice_list.id }}</p>
-                            <p class="detail-title">{{ invoice_list.date }}</p>
+                        <div class="invoice-table-title">
+                            <p class="table-title">Invoice #{{ invoice_list.id }}</p>
+                            <p class="table-title">{{ invoice_list.date }}</p>
                         </div>
                         <table class="invoice-table">
                             <thead>
@@ -86,7 +88,7 @@
                                     <td>{{ index + 1 }}</td>
                                     <td>
                                         <p>{{ item.des }}</p>
-                                        <p class="text-gray">{{ item.type }}</p>
+                                        <p>{{ item.type }}</p>
                                     </td>
                                     <td>{{ item.hours }}</td>
                                     <td>{{ item.rate }}</td>
@@ -116,7 +118,7 @@
 
                     <!-- Payment -->
                     <div class="paper-footer">
-                        <h2 class="section-title">Payment Details</h2>
+                        <h2 class="footer-title">Payment Details</h2>
 
                         <table class="payment-table">
                             <thead>
@@ -268,13 +270,13 @@
                                             <div class="row">
                                                 <div class="col-8">
                                                     <fieldset>
-                                                        <label for="">銀行名稱</label>
+                                                        <label for="">分行名稱</label>
                                                         <input type="text" class="form-control" v-model="payee_payment.branch_title">
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-4">
                                                     <fieldset>
-                                                        <label for="">銀行代碼</label>
+                                                        <label for="">分行代碼</label>
                                                         <input type="text" class="form-control" v-model="payee_payment.branch_code">
                                                     </fieldset>
                                                 </div>

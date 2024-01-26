@@ -20,8 +20,8 @@
         },
 
         "payee_payment": {
-            "branch_title": "銀行名稱",
-            "branch_code": "銀行代碼",
+            "branch_title": "分行名稱",
+            "branch_code": "分行代碼",
             "account_name": "請款人銀行帳戶名稱",
             "account_code": "請款人銀行帳戶代碼"
         }
