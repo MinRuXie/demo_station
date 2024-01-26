@@ -1,9 +1,10 @@
 # DEMO Station
 * 根目錄：https://minruxie.github.io/demo_station/
 
-## 目錄
+## [最後更新年份] 目錄
 
-### [最後更新年份] 工具
+### 工具
+* [2024] 請款單產生器：https://minruxie.github.io/demo_station/bill-generator
 * [2024] 英文單字字典：https://minruxie.github.io/demo_station/word-dictionary
 * [2024] 工時計算機：https://minruxie.github.io/demo_station/working-hours-calculation
 * [2024] 時區對照表V2：https://minruxie.github.io/demo_station/time_zone
