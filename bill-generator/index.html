@@ -154,15 +154,15 @@
         </section>
 
         <!-- 固定畫面區塊 -->
-        <div class="fixed-wrap">
+        <div class="fixed-wrap no-print">
             <!-- Modal Trigger -->
-            <button type="button" class="btn btn-secondary edit-btn no-print" data-bs-toggle="modal" data-bs-target="#exampleModal">編輯</button>
+            <button type="button" class="btn btn-secondary edit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">編輯</button>
 
             <!-- Download PDF -->
-            <button type="button" class="btn btn-secondary download-btn no-print" @click="downloadPDF()">下載為PDF檔案</button>
+            <button type="button" class="btn btn-secondary download-btn" @click="downloadPDF()">下載為PDF檔案</button>
 
             <!-- print -->
-            <button type="button" class="btn btn-secondary print-btn no-print" @click="printPage()">開啟Chrome列印模式</button>
+            <button type="button" class="btn btn-secondary print-btn" @click="printPage()">開啟Chrome列印模式</button>
         </div>
         
 
