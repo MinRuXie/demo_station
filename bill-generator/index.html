@@ -101,7 +101,7 @@
                                     <td>${{ moneyFormat(getSubTotal) }}</td>
                                 </tr>
                                 <tr>
-                                    <th colspan="4">Tax ({{ invoice_list.tax }}%)</th>
+                                    <th colspan="4">Tax <span v-if="invoice_list.tax != 0">({{ invoice_list.tax }}%)<span></th>
                                     <td>${{ moneyFormat( getTax ) }}</td>
                                 </tr>
                                 <tr>
