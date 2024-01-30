@@ -101,8 +101,8 @@
                                     <td>${{ moneyFormat(getSubTotal) }}</td>
                                 </tr>
                                 <tr>
-                                    <th colspan="4">Tax</th>
-                                    <td>${{ moneyFormat(invoice_list.tax) }}</td>
+                                    <th colspan="4">Tax ({{ invoice_list.tax }}%)</th>
+                                    <td>${{ moneyFormat( getTax ) }}</td>
                                 </tr>
                                 <tr>
                                     <th colspan="4">Total</th>
@@ -319,7 +319,7 @@
                                                 </div>
                                                 <div class="col-4">
                                                     <fieldset>
-                                                        <label for="">Tax</label>
+                                                        <label for="">Tax (%)</label>
                                                         <input type="text" class="form-control" v-model="invoice_list.tax">
                                                     </fieldset>
                                                 </div>
