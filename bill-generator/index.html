@@ -179,7 +179,7 @@
 
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-5">
 
                                         <div class="field-wrap">
                                             <h5 class="field-title">付款人資訊</h5>
@@ -299,7 +299,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-7">
 
                                         <div class="field-wrap">
                                             <h5 class="field-title">請款單</h5>
@@ -375,20 +375,57 @@
                                                                 <th>Description</th>
                                                                 <th>Hours</th>
                                                                 <th>Rate</th>
-                                                                <th>Operate</th>
+                                                                <th>
+                                                                    Operate
+                                                                    <button v-if="!status_sort" type="button" class="btn btn-secondary btn-sm" @click="enableSort('sort')">排序</button>
+                                                                    <button v-if="status_sort" type="button" class="btn btn-secondary btn-sm" @click="enableSort('back')">返回</button>
+                                                                </th>
                                                             </tr>
                                                         </thead>
                                                         <tbody v-if="invoice_list.list">
                                                             <tr v-for="(item, index) of invoice_list.list">
                                                                 <td>{{ index + 1 }}</td>
                                                                 <td>
-                                                                    <p>{{ item.des }}</p>
-                                                                    <p>{{ item.type }}</p>
+                                                                    <p>
+                                                                        <template v-if="!item.status_edit">{{ item.des }}</template>
+                                                                        <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_des">
+                                                                    </p>
+                                                                    <p>
+                                                                        <template v-if="!item.status_edit">{{ item.type }}</template>
+                                                                        <input v-if="item.status_edit" type="text" class="form-control"  v-model="item.temp_type">
+                                                                    </p>
                                                                 </td>
-                                                                <td>{{ item.hours }}</td>
-                                                                <td>{{ item.rate }}</td>
                                                                 <td>
-                                                                    <button type="button" class="btn btn-secondary btn-sm" @click="delItem(index)">刪除</button>
+                                                                    <template v-if="!item.status_edit">{{ item.hours }}</template>
+                                                                    <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_hours">
+                                                                </td>
+                                                                <td>
+                                                                    <template v-if="!item.status_edit">{{ item.rate }}</template>
+                                                                    <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_rate">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-wrap">
+
+                                                                        <template v-if="!status_sort">
+                                                                            <!-- 功能選擇 -->
+                                                                            <template v-if="!item.status_edit">
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'edit')">編輯</button>
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="delItem(index)">刪除</button>
+                                                                            </template>
+                                                                            
+                                                                            <!-- 編輯子選項 -->
+                                                                            <template v-if="item.status_edit">
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'save')">儲存</button>
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'cancel')">取消</button>
+                                                                            </template>
+                                                                        </template>
+
+                                                                        <!-- 排序子選項 -->
+                                                                        <template v-if="status_sort">
+                                                                            <button type="button" class="btn btn-secondary btn-sm" @click="sortItem(index, 'up')">上移</button>
+                                                                            <button type="button" class="btn btn-secondary btn-sm" @click="sortItem(index, 'down')">下移</button>
+                                                                        </template>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
