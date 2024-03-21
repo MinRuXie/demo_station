@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>時區對照表-vue</title>
+    <title>時區對照表-v2</title>
     <link rel="icon" href="dist/assets/images/moon.svg" type="image/x-icon">
 
     <!-- Plugin -->
     <link href="dist/assets/css/plugins/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom -->
-    <link href="dist/assets/css/style-vue.css" rel="stylesheet">
+    <link href="dist/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     
@@ -24,17 +24,31 @@
                     <label for="person-name">姓名</label>
                     <input type="text" id="person-name" v-model="form_name">
                 </fieldset>
-    
+
                 <fieldset>
-                    <label for="person-timezone">位置</label>
-                    <select name="person-timezone" id="person-timezone" v-model="form_timezone">
-                        <option value="">請選擇選項</option>
-                        <optgroup v-for="(item, i) of aryIannaTimeZones" :label="item.continent" :key="i">
-                            <option v-for="(place, j) of item.region" :value="item.continent + '/' +  place" :key="i+j">{{ place }}</option>
-                        </optgroup>
+                    <label for="timezone-continent">州</label>
+                    <select name="timezone-continent" id="timezone-continent" v-model="form_continent" @change="changeContinent()">
+                        <option value="" selected>請選擇選項</option>
+                        <option v-for="(continent, i) of select_continent_arr" :value="continent" :key="i">{{ continent }}</option>
                     </select>
                 </fieldset>
-    
+
+                <fieldset>
+                    <label for="timezone-country">國家</label>
+                    <select name="timezone-country" id="timezone-country" v-model="form_country" @change="changeCountry()">
+                        <option value="" selected>請選擇選項</option>
+                        <option v-for="(country, i) of select_country_arr" :value="country" :key="i">{{ country }}</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="timezone-region">城市地區</label>
+                    <select name="timezone-region" id="timezone-region" v-model="form_region">
+                        <option value="" selected>請選擇選項</option>
+                        <option v-for="(region, i) of select_region_arr" :value="region" :key="i">{{ region }}</option>
+                    </select>
+                </fieldset>
+        
                 <button type="button" @click="addPerson()">新增成員</button>
             </form>
 
@@ -58,13 +72,19 @@
                         <td>
                             {{ item.person_name }}<br>
                             <span class="time">{{ item.cur_hour }}</span><br>
-                            {{ item.cur_date }}
+                            {{ item.cur_date }} {{ item.cur_week }}<br>
+
+                            <div class="btn-wrap">
+                                <button @click="sortPerson(index, 'up')">上移</button>
+                                <button @click="sortPerson(index, 'down')">下移</button>
+                                <button @click="delPerson(index)">刪除</button>
+                            </div>
                         </td>
 
                         <!-- 時區對照 -->
                         <td>
                             <div class="hour-wrap">
-                                <span v-for="(h, index) of item.hour_show" 
+                                <span v-for="(h, index) of item.hours_arr" 
                                       :data-hour="h"
                                       class="hour"
                                       :class="{ 
@@ -100,6 +120,9 @@
     <!-- Plugins -->
     <!-- <script src="dist/assets/js/plugins/bootstrap.min.js"></script> -->
     <script src="dist/assets/js/plugins/vue.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/manuelmhtr/countries-and-timezones@latest/dist/index.min.js" type="text/javascript"></script>
+
 
     <!-- Custom -->
     <script src="dist/assets/js/bundle.js"></script>
