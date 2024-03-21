@@ -1,0 +1,29 @@
+{
+    "invoices": {
+        
+        "payer": {
+            "ch_name": "付款人中文姓名",
+            "en_name": "付款人英文姓名",
+            "address": "付款人第一行地址",
+            "address2": "付款人第二行地址",
+            "phone": "付款人電話號碼",
+            "email": "付款人電子郵件"
+        },
+
+        "payee": {
+            "ch_name": "請款人中文姓名",
+            "en_name": "請款人英文姓名",
+            "address": "請款人第一行地址",
+            "address2": "請款人第二行地址",
+            "phone": "請款人電話號碼",
+            "email": "請款人電子郵件"
+        },
+
+        "payee_payment": {
+            "branch_title": "分行名稱",
+            "branch_code": "分行代碼",
+            "account_name": "請款人銀行帳戶名稱",
+            "account_code": "請款人銀行帳戶代碼"
+        }
+    }
+}

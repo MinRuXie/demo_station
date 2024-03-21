@@ -118,10 +118,13 @@
                                             <!-- 備註 -->
                                             <td>
                                                 <!-- 顯示文字 -->
-                                                <span v-if="!item.comment_editable"  class="comment-text">{{ item.r_comment }}</span>
+                                                <span v-if="!item.comment_editable" class="comment-text">{{ item.r_comment }}</span>
                                                 
                                                 <!-- 輸入框 -->
-                                                <input v-if="item.comment_editable" ref="c-input" type="text" v-model="item.r_comment" @blur="enableComment(item.r_id, false)">
+                                                <input type="text" v-if="item.comment_editable" 
+                                                       :ref="'cInput-' + item.r_id"
+                                                       v-model="item.r_comment"
+                                                       @blur="enableComment(item.r_id, false)">
                                             </td>
 
                                             <!-- 操作 -->

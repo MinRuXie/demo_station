@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synctify_Design_Invoice</title>
+
+    <!-- icon -->
+    <link rel="icon" href="dist/assets/images/favicon.ico" type="image/x-icon" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="dist/assets/css/plugins/bootstrap.min.css">
+
+    <!-- HTML-Sheets-of-Paper-gh-pages -->
+    <link rel="stylesheet" href="dist/assets/css/plugins/sheets-of-paper-a4.css">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+</head>
+<body class="document">
+    
+    <main id="app">
+
+        <!-- A4 尺寸 -->
+        <section class="page">
+
+            <!-- 儲存為 PDF 範圍 -->
+            <div ref="printPage" class="page-inner">
+                
+                <div class="paper">
+                    <!-- Header -->
+                    <nav class="paper-header">
+                        <div class="header-left">
+                            <div class="page-title">
+                                <div class="title-image">
+                                    <img src="dist/assets/images/Invoice.png" alt="Invoice">
+                                </div>
+                                <h2 class="title-text">電子帳單</h2>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="logo-image">
+                                <img src="dist/assets/images/logo.png" alt="logo">
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Info -->
+                    <div class="paper-detail">
+                        <div class="detail-payer">
+                            <p class="primary-detail">{{ payer.ch_name }} {{ payer.en_name }}</p>
+                            <p class="secondary-detail">{{ payer.address }}<br>{{ payer.address2 }}</p>
+                            <p class="secondary-detail">{{ payer.phone }}</p>
+                            <p class="secondary-detail">{{ payer.email }}</p>
+                        </div>
+                        <div class="detail-payee">
+                            <p class="primary-detail">{{ payee.ch_name }} {{ payee.en_name }}</p>
+                            <p class="secondary-detail">{{ payee.address }}<br>{{ payee.address2 }}</p>
+                            <p class="secondary-detail">{{ payee.phone }}</p>
+                            <p class="secondary-detail">{{ payee.email }}</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Body -->
+                    <div class="paper-body">
+                        <div class="invoice-table-title">
+                            <p class="table-title">Invoice #{{ invoice_list.id }}</p>
+                            <p class="table-title">{{ invoice_list.date }}</p>
+                        </div>
+                        <table class="invoice-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Description</th>
+                                    <th>Hours</th>
+                                    <th>Rate ($/Hr)</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody v-if="invoice_list.list">
+                                <tr v-for="(item, index) of invoice_list.list">
+                                    <td>{{ index + 1 }}</td>
+                                    <td>
+                                        <p>{{ item.des }}</p>
+                                        <p>{{ item.type }}</p>
+                                    </td>
+                                    <td>{{ item.hours }}</td>
+                                    <td>{{ item.rate }}</td>
+                                    <td>${{ moneyFormat(item.amount) }}</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="total-row">
+                                <tr>
+                                    <th colspan="4">Sub Total</th>
+                                    <td>${{ moneyFormat(getSubTotal) }}</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">Tax <span v-if="invoice_list.tax != 0">({{ invoice_list.tax }}%)<span></th>
+                                    <td>${{ moneyFormat( getTax ) }}</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">Total</th>
+                                    <td>${{ moneyFormat(getTotal) }}</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">Amount Due (NTD)</th>
+                                    <td>${{ moneyFormat(getAmountDue) }}</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <!-- Payment -->
+                    <div class="paper-footer">
+                        <h2 class="footer-title">Payment Details</h2>
+
+                        <table class="payment-table">
+                            <thead>
+                                <tr>
+                                    <th>A/C with Bank</th>
+                                    <th>Taishin International Bank (812)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Branch</th>
+                                    <td>{{ payee_payment.branch_title }} ({{ payee_payment.branch_code }})</td>
+                                </tr>
+                                <tr>
+                                    <th>Beneficiary's Name</th>
+                                    <td>{{ payee_payment.account_name }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Beneficiary's A/C No.</th>
+                                    <td>{{ payee_payment.account_code }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="notice">Payment terms (due on receipt, due in 7 days). Thank you!</p>
+                    </div>
+                </div>
+                
+                <p class="page-num">{ 1 / 1 }</p>
+
+            </div>
+
+        </section>
+
+        <!-- 固定畫面區塊 -->
+        <div class="fixed-wrap no-print">
+            <!-- Modal Trigger -->
+            <button type="button" class="btn btn-secondary edit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">編輯</button>
+
+            <!-- Download PDF -->
+            <button type="button" class="btn btn-secondary download-btn" @click="downloadPDF()">下載為PDF檔案</button>
+
+            <!-- print -->
+            <button type="button" class="btn btn-secondary print-btn" @click="printPage()">開啟Chrome列印模式</button>
+        </div>
+        
+
+        <!-- Modal -->
+        <div class="edit-modal modal fade no-print" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">編輯</h5>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    </div>
+                    <div class="modal-body">
+                        <form class="from-wrap">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+
+                                        <div class="field-wrap">
+                                            <h5 class="field-title">付款人資訊</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <fieldset>
+                                                        <label for="">中文姓名</label>
+                                                        <input type="text" class="form-control" v-model="payer.ch_name">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-6">
+                                                    <fieldset>
+                                                        <label for="">英文姓名</label>
+                                                        <input type="text" class="form-control" v-model="payer.en_name">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <fieldset>
+                                                        <label for="">地址</label>
+                                                        <input type="text" class="form-control" v-model="payer.address">
+                                                        <input type="text" class="form-control" v-model="payer.address2">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">電話</label>
+                                                        <input type="text" class="form-control" v-model="payer.phone">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">電子郵件</label>
+                                                        <input type="text" class="form-control" v-model="payer.email">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <h5 class="field-title">請款人資訊</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <fieldset>
+                                                        <label for="">中文姓名</label>
+                                                        <input type="text" class="form-control" v-model="payee.ch_name">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-6">
+                                                    <fieldset>
+                                                        <label for="">英文姓名</label>
+                                                        <input type="text" class="form-control" v-model="payee.en_name">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <fieldset>
+                                                        <label for="">地址</label>
+                                                        <input type="text" class="form-control" v-model="payee.address">
+                                                        <input type="text" class="form-control" v-model="payee.address2">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">電話</label>
+                                                        <input type="text" class="form-control" v-model="payee.phone">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">電子郵件</label>
+                                                        <input type="text" class="form-control" v-model="payee.email">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">分行名稱</label>
+                                                        <input type="text" class="form-control" v-model="payee_payment.branch_title">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">分行代碼</label>
+                                                        <input type="text" class="form-control" v-model="payee_payment.branch_code">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">請款人銀行名稱</label>
+                                                        <input type="text" class="form-control" v-model="payee_payment.account_name">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">請款人銀行帳號</label>
+                                                        <input type="text" class="form-control" v-model="payee_payment.account_code">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-7">
+
+                                        <div class="field-wrap">
+                                            <h5 class="field-title">請款單</h5>
+
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <fieldset>
+                                                        <label for="">編號#</label>
+                                                        <input type="text" class="form-control" v-model="invoice_list.id">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-6">
+                                                    <fieldset>
+                                                        <label for="">日期</label>
+                                                        <input type="text" class="form-control" v-model="invoice_list.date">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">Tax (%)</label>
+                                                        <input type="text" class="form-control" v-model="invoice_list.tax">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <h5 class="field-title">請款項目</h5>
+
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">標題</label>
+                                                        <input type="text" class="form-control" v-model="form.des">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">時數</label>
+                                                        <input type="text" class="form-control" v-model="form.hours">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <fieldset>
+                                                        <label for="">類型</label>
+                                                        <input type="text" class="form-control" v-model="form.type">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-4">
+                                                    <fieldset>
+                                                        <label for="">時薪</label>
+                                                        <input type="text" class="form-control" v-model="form.rate">
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-secondary btn-sm" @click="addItem()">新增</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Description</th>
+                                                                <th>Hours</th>
+                                                                <th>Rate</th>
+                                                                <th>
+                                                                    Operate
+                                                                    <button v-if="!status_sort" type="button" class="btn btn-secondary btn-sm" @click="enableSort('sort')">排序</button>
+                                                                    <button v-if="status_sort" type="button" class="btn btn-secondary btn-sm" @click="enableSort('back')">返回</button>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody v-if="invoice_list.list">
+                                                            <tr v-for="(item, index) of invoice_list.list">
+                                                                <td>{{ index + 1 }}</td>
+                                                                <td>
+                                                                    <p>
+                                                                        <template v-if="!item.status_edit">{{ item.des }}</template>
+                                                                        <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_des">
+                                                                    </p>
+                                                                    <p>
+                                                                        <template v-if="!item.status_edit">{{ item.type }}</template>
+                                                                        <input v-if="item.status_edit" type="text" class="form-control"  v-model="item.temp_type">
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    <template v-if="!item.status_edit">{{ item.hours }}</template>
+                                                                    <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_hours">
+                                                                </td>
+                                                                <td>
+                                                                    <template v-if="!item.status_edit">{{ item.rate }}</template>
+                                                                    <input v-if="item.status_edit" type="text" class="form-control" v-model="item.temp_rate">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-wrap">
+
+                                                                        <template v-if="!status_sort">
+                                                                            <!-- 功能選擇 -->
+                                                                            <template v-if="!item.status_edit">
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'edit')">編輯</button>
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="delItem(index)">刪除</button>
+                                                                            </template>
+                                                                            
+                                                                            <!-- 編輯子選項 -->
+                                                                            <template v-if="item.status_edit">
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'save')">儲存</button>
+                                                                                <button type="button" class="btn btn-secondary btn-sm" @click="editItem(index, 'cancel')">取消</button>
+                                                                            </template>
+                                                                        </template>
+
+                                                                        <!-- 排序子選項 -->
+                                                                        <template v-if="status_sort">
+                                                                            <button type="button" class="btn btn-secondary btn-sm" @click="sortItem(index, 'up')">上移</button>
+                                                                            <button type="button" class="btn btn-secondary btn-sm" @click="sortItem(index, 'down')">下移</button>
+                                                                        </template>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="saveToLocal()">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- bootstrap 5.1.3 -->
+    <script src="dist/assets/js/plugins/bootstrap.bundle.min.js"></script>
+
+    <!-- vue 2.6.10 -->
+    <script src="dist/assets/js/plugins/vue.min.js"></script>
+
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom -->
+    <script src="dist/assets/js/bundle.js"></script>
+</body>
+</html>
