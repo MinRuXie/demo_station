@@ -26,7 +26,6 @@
 <body>
     
     <main id="app">
-
         <div v-if="showCopyed" class="copyed-msg">已複製到剪貼簿</div>
 
         <section>
@@ -101,18 +100,18 @@
                                         <tr v-for="(item, index) of record_arr" :key="index">
                                             
                                             <!-- 日期 -->
-                                            <td>{{ formatTableData(item).data_d }}</td>
+                                            <td>{{ item | formatTableData('start-date') }}</td>
 
                                             <!-- 時段 -->
-                                            <td>{{ formatTableData(item).data_s }}~{{ formatTableData(item).data_e }}</td>
+                                            <td>{{ item | formatTableData('start-time') }}~{{ item | formatTableData('end-time') }}</td>
 
                                             <!-- 時數 -->
                                             <td>
-                                                <!-- 無條件進位值 -->
-                                                <span v-if="hours_magic">{{ formatTableData(item).data_m_hs }}</span>
+                                                <!-- 魔法時數: 無條件進位值 -->
+                                                <span v-if="hours_magic">{{ item | formatTableData('magic-hours') }}</span>
 
-                                                <!-- 原始值 -->
-                                                <span v-if="!hours_magic">{{ formatTableData(item).data_o_hs }}</span>
+                                                <!-- 真實時數: 原始值 -->
+                                                <span v-if="!hours_magic">{{ item | formatTableData('real-hours') }}</span>
                                             </td>
 
                                             <!-- 備註 -->
