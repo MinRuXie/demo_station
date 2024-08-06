@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Piano Notation Tool</title>
+
+        <!-- google info -->
+        <meta name="description" content="Use the easy way to make musical notation!">
+        <meta name="author" content="Copyright&copy;Since 2019, JoyXie.">
+        
+        <!-- facebook og -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Piano Notation Tool"/>
+        <meta property="og:site_name" content="Piano Notation Tool"/>
+        <meta property="og:description" content="Use the easy way to make musical notation!"/>
+        <meta property="og:url" content="https://minruxie.github.io/demo_station/PianoNotationConversionTool"/>
+        <meta property="og:image" content="https://minruxie.github.io/demo_station/PianoNotationConversionTool/dist/assets/image/opengraph.png"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:image:width" content="600"/>
+        <meta property="og:image:height" content="315"/>
+        
+        <!-- icon -->
+        <link rel="icon" href="dist/assets/image/icon.png" type="image/x-icon">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Galindo" rel="stylesheet">
+
+        <!-- custom -->
+        <link href="dist/assets/css/style.css" rel="stylesheet">	
+    </head>
+    
+    <body>
+        <main id="app">
+            <div class="container">
+                <div id="capture" class="text">
+                    <div class="title" v-bind:title="$t('text.__song_title_point')">{{ $t('text.__song_title') }}</div>
+                    <div class="panel number-panel open"></div>
+                    <div class="panel tabs-panel"></div>
+                </div>
+                <div class="toolbox">
+                    <div id="toolbox-btn"></div>
+                    <div id="js-note-remove" class="toolbutton" title="Backspace">{{ $t('toolbox.__delete_note') }}</div>
+                    <div id="js-note-space" class="toolbutton" title="Space">{{ $t('toolbox.__space_note') }}</div>
+                    <hr>
+                    <div id="js-line-add" class="toolbutton" title="Enter">{{ $t('toolbox.__add_line') }}</div>
+                    <div id="js-line-copy" class="toolbutton" title="none">{{ $t('toolbox.__copy_line') }}</div>
+                    <div id="js-line-break" class="toolbutton" title="none">{{ $t('toolbox.__break_line') }}</div>
+                    <div id="js-line-move-up" class="toolbutton" title="none">{{ $t('toolbox.__move_up_line') }}</div>
+                    <div id="js-line-move-down" class="toolbutton" title="none">{{ $t('toolbox.__move_down_line') }}</div>
+                    <hr>
+                    <div id="js-piano-show" class="toolbutton" title="none">{{ $t('toolbox.__show_piano') }}</div>
+                    <div id="js-piano-hide" class="toolbutton" title="none">{{ $t('toolbox.__hidden_piano') }}</div>
+                    <div id="js-switch-panel" class="toolbutton" title="none">{{ $t('toolbox.__switch_mode') }}</div>
+                    <hr>
+                    <div id="js-ouput-result" class="toolbutton" title="none">{{ $t('toolbox.__output_result') }}</div>
+                    <div id="js-intro" class="toolbutton" title="none">{{ $t('toolbox.__function_description') }}</div>
+                    <div id="js-switch-lang" class="toolbutton" title="none" v-on:click="switchLanguage">{{ $t('toolbox.__switch_lang') }}</div>
+                </div>
+                <div class="piano">
+                    <div class="slide"></div>
+                </div>
+            </div>
+            <div class="colorarea">
+                <div class="colorbox">
+                    <div class="colortitle">{{ $t('colorarea.__color_title') }}</div>
+                    <div class="colorbtn" style="background: #FFF"></div>
+                    <div class="colorbtn" style="background: #D9A813"></div>
+                    <div class="colorbtn" style="background: #12A182"></div>
+                    <div class="colorbtn" style="background: #61318E"></div>
+                    <div class="colorbtn" style="background: #B25520"></div>
+                    <div class="checkbtn">{{ $t('colorarea.__check') }}</div>
+                    <div class="cancelbtn">{{ $t('colorarea.__cancel') }}</div>
+                </div>
+            </div>
+            <div class="intro-wrap modal-wrap active">
+                <div class="intro-content">
+                    <div class="ctr-btn">X</div>
+                    <div class="intro-outter-wrap">
+                        <div class="intro-inner-wrap">
+                            <h2>{{ $t('features.rule.__title') }}</h2>
+                            <ul>
+                                <li>{{ $t('features.rule.__item_1') }}</li>
+                                <li>{{ $t('features.rule.__item_2') }}</li>
+                                <li>{{ $t('features.rule.__item_3') }}</li>
+                                <li>
+                                    {{ $t('features.rule.__item_4.__summary') }}
+                                    <ul>
+                                        <li>{{ $t('features.rule.__item_4.__details[0]') }}</li>
+                                        <li>{{ $t('features.rule.__item_4.__details[1]') }}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>{{ $t('features.note.__title') }}</h3>
+                            <ul>
+                                <li>{{ $t('features.note.__item_1') }}</li>
+                                <li>{{ $t('features.note.__item_2') }}</li>
+                                <li>{{ $t('features.note.__item_3') }}</li>
+                            </ul>
+
+                            <h3>{{ $t('features.track.__title') }}</h3>
+                            <ul>
+                                <li>{{ $t('features.track.__item_1') }}</li>
+                                <li>{{ $t('features.track.__item_2') }}</li>
+                                <li>{{ $t('features.track.__item_3') }}</li>
+                                <li>{{ $t('features.track.__item_4') }}</li>
+                                <li>{{ $t('features.track.__item_5') }}</li>
+                                <li>{{ $t('features.track.__item_6') }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div class="screenshot-wrap modal-wrap">
+                <div class="ctr-btn">X</div>
+                <div class="msg_wrap">{{ $t('notice.__capturing') }}</div>
+                <div id="output" class="screenshot-content"></div>
+            </div>
+    
+            <div class='warn_size'>
+                <img src="dist/assets/image/Magnify-1s-200px.svg">
+                <span>{{ $t('notice.__size_warn') }}</span>
+            </div>
+    
+            <div class='loading'>
+                <img src="dist/assets/image/Pulse-1s-200px.svg">
+            </div>
+        </main>
+
+
+        <!-- plugins -->
+        <script src="dist/assets/js/plugins/jquery-3.3.1.min.js"></script>
+        <script src="dist/assets/js/plugins/ismobilejs@0.5.1/isMobile.min.js"></script>
+        <script src="dist/assets/js/plugins/html2canvas.min.js"></script>
+        <script src="dist/assets/js/plugins/vue@2.6.14/vue.js"></script>
+        <script src="dist/assets/js/plugins/vue-i18n@8.27.0/vue-i18n.js"></script>
+            
+        <!-- custom -->
+        <script type="module" src="dist/assets/js/bundle.js"></script>
+    </body>
+
+</html>
