@@ -9,6 +9,5 @@
 * [2021] 吉他TAB譜轉簡譜_V1：https://minruxie.github.io/demo_station/GuitarNotationTool
 * [2021] 吉他TAB譜轉簡譜_V2：https://minruxie.github.io/demo_station/GuitarNotationTool_2
 
-### 娛樂
-* [2023] 翻翻牌對對碰遊戲：https://minruxie.github.io/demo_station/flipping_images
+### 暫存
 * [2022] 阿奈玩具：https://minruxie.github.io/demo_station/kana_toy
